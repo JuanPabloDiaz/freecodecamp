@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# FreeCodeCamp Projects 📚
+# FreeCodeCamp Collection Projects 📚
 
 This repo is a collection of all the projects I've built as part of the **[freeCodeCamp’s legacy Front End Development Certification](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)**. The goal was to build a series of projects to improve my skills in HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Node.js, Git, and GitHub.
 
