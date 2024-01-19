@@ -217,27 +217,6 @@ const Navbar = () => {
                   My Account
                 </NavLink>
               </li>
-              <li className={hoverStyle}>
-                <NavLink
-                  to="/my-orders"
-                  className={({ isActive }) =>
-                    isActive ? activeStyle : undefined
-                  }
-                >
-                  My Orders
-                </NavLink>
-              </li>
-              <li className={hoverStyle}>
-                <NavLink
-                  to="/card"
-                  className={`flex items-center justify-center ${({
-                    isActive,
-                  }) => (isActive ? activeStyle : undefined)}`}
-                >
-                  <HiOutlineShoppingCart className="mr-1" />
-                  <p>{context.cartProducts.length}</p>
-                </NavLink>
-              </li>
               <li>
                 <NavLink
                   // to="/Logout"

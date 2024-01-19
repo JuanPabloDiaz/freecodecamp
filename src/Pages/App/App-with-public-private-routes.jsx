@@ -7,8 +7,6 @@ import CheckoutSideMenu from "../../Components/CheckoutSideMenu/index.jsx";
 import "./App.css";
 
 import Home from "../Home/index.jsx";
-import MyOrder from "../MyOrder/index.jsx";
-import MyOrders from "../MyOrders/index.jsx";
 import NotFound from "../NotFound/index.jsx";
 import MyAccount from "../MyAccount/index.jsx";
 import SignIn from "../SignIn/index.jsx";
@@ -77,36 +75,8 @@ const AppRoutes = () => {
       />
       {/* PrivateRoute: */}
       <Route
-        path="/my-order"
-        element={
-          <PrivateRoute>
-            <MyOrder />
-          </PrivateRoute>
-        }
-      />
-      <Route
-        path="/my-orders"
-        element={
-          <PrivateRoute>
-            <MyOrders />
-          </PrivateRoute>
-        }
-      />
-      <Route
-        path="/my-orders/last"
-        element={
-          <PrivateRoute>
-            <MyOrder />
-          </PrivateRoute>
-        }
-      />
-      <Route
         path="/my-orders/:id"
-        element={
-          <PrivateRoute>
-            <MyOrder />
-          </PrivateRoute>
-        }
+        element={<PrivateRoute>{/* <Test /> */}</PrivateRoute>}
       />
       <Route
         path="/my-account"

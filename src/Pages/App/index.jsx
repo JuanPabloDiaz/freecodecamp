@@ -8,8 +8,6 @@ import CheckoutSideMenu from "../../Components/CheckoutSideMenu";
 import "./App.css";
 
 import Home from "../Home";
-import MyOrder from "../MyOrder";
-import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import MyAccount from "../MyAccount";
 import SignIn from "../SignIn";
@@ -59,38 +57,7 @@ const AppRoutes = () => {
     { path: "/Twitch", element: <Twitch /> },
     { path: "/Wikipedia", element: <Wikipedia /> },
     // Private Routes
-    {
-      path: "/my-order",
-      element: (
-        <PrivateRoute>
-          <MyOrder />
-        </PrivateRoute>
-      ),
-    },
-    {
-      path: "/my-orders",
-      element: (
-        <PrivateRoute>
-          <MyOrders />
-        </PrivateRoute>
-      ),
-    },
-    {
-      path: "/my-orders/last",
-      element: (
-        <PrivateRoute>
-          <MyOrder />
-        </PrivateRoute>
-      ),
-    },
-    {
-      path: "/my-orders/:id",
-      element: (
-        <PrivateRoute>
-          <MyOrder />
-        </PrivateRoute>
-      ),
-    },
+
     {
       path: "/my-account",
       element: (

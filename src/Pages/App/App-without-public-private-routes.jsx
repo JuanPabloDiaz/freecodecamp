@@ -7,8 +7,6 @@ import CheckoutSideMenu from "../../Components/CheckoutSideMenu";
 import "./App.css";
 
 import Home from "../Home";
-import MyOrder from "../MyOrder";
-import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import MyAccount from "../MyAccount";
 import SignIn from "../SignIn";
