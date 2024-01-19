@@ -93,24 +93,32 @@ const Navbar = () => {
             onMouseLeave={() => setShowDropdownTech(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Electronics
+            Games
             {showDropdownTech && (
               <div className={dropdownStyle}>
                 <NavLink
-                  to="/smartphones"
+                  to="/TicTacToe"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  onClick={() => context.setSearchByCategory("smartphones")}
+                  // onClick={() => context.setSearchByCategory("smartphones")}
                 >
-                  Phone
+                  Tic Tac Toe
                 </NavLink>
                 <NavLink
-                  to="/laptops"
+                  to="/Simon"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  onClick={() => context.setSearchByCategory("laptops")}
+                  // onClick={() => context.setSearchByCategory("laptops")}
                 >
-                  Laptop
+                  Simon
+                </NavLink>
+                <NavLink
+                  to="/Drum"
+                  className={`${hoverStyle} ${({ isActive }) =>
+                    isActive ? activeStyle : undefined}`}
+                  // onClick={() => context.setSearchByCategory("laptops")}
+                >
+                  Drum Machine
                 </NavLink>
               </div>
             )}
@@ -120,44 +128,79 @@ const Navbar = () => {
             onMouseLeave={() => setShowDropdown(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Cosmetics
+            Tools
             {showDropdown && (
               <div className={dropdownStyle}>
                 <NavLink
-                  to="/fragrances"
+                  to="/calculator"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  onClick={() => context.setSearchByCategory("fragrances")}
+                  // onClick={() => context.setSearchByCategory("fragrances")}
                 >
-                  Perfumes
+                  Calculator
                 </NavLink>
                 <NavLink
-                  to="/skincare"
+                  to="/Pomodoro"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  onClick={() => context.setSearchByCategory("skincare")}
+                  // onClick={() => context.setSearchByCategory("skincare")}
                 >
-                  Skin Care
+                  25 + 5 Clock
                 </NavLink>
               </div>
             )}
           </li>
-          <li className={hoverStyle}>
-            <NavLink
-              to="/groceries"
-              className={({ isActive }) => (isActive ? activeStyle : undefined)}
-              onClick={() => context.setSearchByCategory("groceries")}
-            >
-              Groceries
-            </NavLink>
+          <li
+            onMouseEnter={() => setShowDropdown(true)}
+            onMouseLeave={() => setShowDropdown(false)}
+            className={`group relative cursor-pointer ${hoverStyle}`}
+          >
+            Tools with an API
+            {showDropdown && (
+              <div className={dropdownStyle}>
+                <NavLink
+                  to="/Weather"
+                  className={`${hoverStyle} ${({ isActive }) =>
+                    isActive ? activeStyle : undefined}`}
+                  // onClick={() => context.setSearchByCategory("skincare")}
+                >
+                  Local Weather
+                </NavLink>
+                <NavLink
+                  to="/Twitch"
+                  className={`${hoverStyle} ${({ isActive }) =>
+                    isActive ? activeStyle : undefined}`}
+                  // onClick={() => context.setSearchByCategory("skincare")}
+                >
+                  Twitch
+                </NavLink>
+                <NavLink
+                  to="/Quote"
+                  className={`${hoverStyle} ${({ isActive }) =>
+                    isActive ? activeStyle : undefined}`}
+                  // onClick={() => context.setSearchByCategory("skincare")}
+                >
+                  Quote Generator
+                </NavLink>
+                <NavLink
+                  to="/Wikipedia"
+                  className={`${hoverStyle} ${({ isActive }) =>
+                    isActive ? activeStyle : undefined}`}
+                  // onClick={() => context.setSearchByCategory("skincare")}
+                >
+                  Wikipedia Viewer
+                </NavLink>
+              </div>
+            )}
           </li>
+
           <li className={hoverStyle}>
             <NavLink
-              to="/home-decoration"
+              to="/Markdown"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
-              onClick={() => context.setSearchByCategory("home-decoration")}
+              // onClick={() => context.setSearchByCategory("home-decoration")}
             >
-              HomeGoods
+              Markdown Previewer
             </NavLink>
           </li>
         </ul>

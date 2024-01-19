@@ -13,6 +13,17 @@ import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import MyAccount from "../MyAccount";
 import SignIn from "../SignIn";
+import TicTacToe from "../TicTacToe";
+import Pomodoro from "../Pomodoro";
+import Calculator from "../Calculator";
+import Quote from "../Quote";
+import Markdown from "../Markdown";
+import Drum from "../Drum";
+import Simon from "../Simon";
+import Weather from "../Weather";
+import Twitch from "../Twitch";
+import Wikipedia from "../Wikipedia";
+
 // import Logout from "../Logout";
 
 // Implementing the Private and Public Routes:
@@ -38,12 +49,15 @@ PublicRoute.propTypes = {
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/smartphones", element: <Home /> },
-    { path: "/laptops", element: <Home /> },
-    { path: "/fragrances", element: <Home /> },
-    { path: "/skincare", element: <Home /> },
-    { path: "/groceries", element: <Home /> },
-    { path: "/home-decoration", element: <Home /> },
+    { path: "/Pomodoro", element: <Pomodoro /> },
+    { path: "/Calculator", element: <Calculator /> },
+    { path: "/Quote", element: <Quote /> },
+    { path: "/Markdown", element: <Markdown /> },
+    { path: "/Drum", element: <Drum /> },
+    { path: "/Simon", element: <Simon /> },
+    { path: "/Weather", element: <Weather /> },
+    { path: "/Twitch", element: <Twitch /> },
+    { path: "/Wikipedia", element: <Wikipedia /> },
     // Private Routes
     {
       path: "/my-order",
@@ -99,6 +113,14 @@ const AppRoutes = () => {
       element: (
         <PublicRoute>
           <SignIn />
+        </PublicRoute>
+      ),
+    },
+    {
+      path: "/TicTacToe",
+      element: (
+        <PublicRoute>
+          <TicTacToe />
         </PublicRoute>
       ),
     },
