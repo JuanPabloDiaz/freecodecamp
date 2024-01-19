@@ -5,7 +5,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { useScrollPosition } from "../../Utils/useScrollPosition";
 import { useAuth } from "../../Context/auth";
 import { useNavigate } from "react-router-dom";
-import logo from "../../../public/assets/images/logo.svg";
+// import logo from "../../../public/assets/images/logo.svg";
 
 const Navbar = () => {
   const activeStyle = "underline text-gray-500 underline-offset-4";
@@ -76,7 +76,7 @@ const Navbar = () => {
                 className="h-14 w-14"
                 // className="w-10 h-10 sm:w-8 sm:h-8"
               /> */}
-              <span>JP·Shop</span>
+              <span>FreeCodeCamp Collection Projects</span>
             </NavLink>
           </li>
           <li className={hoverStyle}>
