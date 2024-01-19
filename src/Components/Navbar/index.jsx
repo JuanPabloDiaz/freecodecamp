@@ -70,12 +70,12 @@ const Navbar = () => {
               onClick={() => context.setSearchByCategory(null)}
               className="flex items-center gap-3"
             >
-              <img
+              {/* <img
                 src={logo}
                 alt="logo"
                 className="h-14 w-14"
                 // className="w-10 h-10 sm:w-8 sm:h-8"
-              />
+              /> */}
               <span>JP·Shop</span>
             </NavLink>
           </li>
