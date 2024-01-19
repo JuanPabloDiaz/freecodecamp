@@ -1,31 +1,37 @@
 <div id="top"></div>
 
-# Curso de React.js con Vite.js y TailwindCSS
+# FreeCodeCamp Projects 📚
 
-This repo contain all the info from the course I took in Platzi regarding how to create an E-commerce site using React.js, Vite.js and TailwindCSS . The course name is: "[Curso de React.js con Vite.js y TailwindCSS](https://platzi.com/cursos/react-vite-tailwindcss/)".
+This repo is a collection of all the projects I've built as part of the **[freeCodeCamp’s legacy Front End Development Certification](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)**. The goal was to build a series of projects to improve my skills in HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Node.js, Git, and GitHub.
 
-<!-- ABOUT THE PROJECT -->
+<div align="center">
 
-## Description 💡
+[![freeCodeCamp](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://freecodecamp.jpdiaz.dev/)
+[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/freecodecamp)
 
-Build an Online Store with React.js, the most in-demand tool for frontend developers. It integrates Vite.js for the development environment, TailwindCSS for style management and React Router DOM for routes and navigation. Transform Figma prototypes into professional web applications and deploy them to production with your Teffcode teacher.
+</div>
 
-- Build components to view products, purchase orders and filter by category
-- Implement client-side navigation with React Router.
-- Consume the Platzi Fake Store using React.js.
+### Desktop View 🖥️
 
-<!-- OTHER PROJECTS -->
+<img src="./src/assets/images/desktop.png" width="" />
 
-## Projects 🚀
+### iPad view 📱
 
-![](https://img.shields.io/badge/Platzi_Repos-121f3d?style=for-the-badge&logo=Platzi&logoColor=98CA3F)
-[![](https://img.shields.io/badge/2021-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2021)
-[![](https://img.shields.io/badge/2022-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2022)
-[![](https://img.shields.io/badge/2023-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2023)
+<img src="./src/assets/images/ipad.png" width="300" />
+
+### Mobile view 📱
+
+<img src="./src/assets/images/phone.png" width="250" />
+
+## Features:
+
+- Responsive design: [freecodecamp](https://freecodecamp.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
+- Sleek and modern UI: Tailwind CSS provides a beautiful and intuitive user interface.
+- Efficient and performant: Vite.js ensures fast loading times and a smooth experience.
 
 ### Built With 🔑
 
-This project is based on React.js con Vite.js y TailwindCSS
+Welcome to the [freecodecamp](https://freecodecamp.jpdiaz.dev), collection.
 
 ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
@@ -33,11 +39,47 @@ This project is based on React.js con Vite.js y TailwindCSS
 ![React-Router](https://img.shields.io/badge/React%20Router-CA4245.svg?style=for-the-badge&logo=React-Router&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=Figma&logoColor=white)
 
-<!-- LICENSE -->
+Here's a closer look at the tech stack:
+
+- Front-End: React.js, Vite.js, Tailwind CSS
+- Back-End: N/A
+- Deployment: Vercel
+
+## Get started 🛠️
+
+To get started with [freecodecamp](https://freecodecamp.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
+
+### Setup 📋
+
+1. Clone the repo
+2. Install dependencies
+   ```sh
+   npm install
+   ```
+3. Start the development server
+   ```sh
+   npm run dev
+   ```
+4. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
+
+## Contribution 🤝
+
+I welcome contributions to the freecodecamp collection repo! Feel free to fork the repository and submit pull requests with your improvements.
 
 ## License 📜
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+[freecodecamp](https://freecodecamp.jpdiaz.dev) is licensed under the MIT License.
+
+I hope you enjoy using the freecodecamp repo!
+
+<!-- OTHER PROJECTS -->
+
+## Other Projects 🚀
+
+![](https://img.shields.io/badge/Platzi_Repos-121f3d?style=for-the-badge&logo=Platzi&logoColor=98CA3F)
+[![](https://img.shields.io/badge/2021-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2021)
+[![](https://img.shields.io/badge/2022-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2022)
+[![](https://img.shields.io/badge/2023-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2023)
 
 <!-- CONTACT -->
 
@@ -55,7 +97,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Resources list that I find helpful and would like to give credit to.
 
-<p align="right">(<a href="#top">👆 Top 👆</a>)</p>
+- [freeCodeCamp](https://www.freecodecamp.org/)
+- [freeCodeCamp Front-end](https://www.freecodecamp.org/learn/front-end-development-libraries/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite.js](https://vitejs.dev/)
+- [React.js](https://reactjs.org/)
+- [Vercel](https://vercel.com/)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<p align="right">(<a href="#top">👆 Top 👆</a>)</p>
