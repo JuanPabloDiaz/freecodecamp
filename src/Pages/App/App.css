@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Markdown Preview Section */
+
+@layer components {
+  /* This will only affect the scrollbar in the .markdown_scrollbar */
+  .markdown_scrollbar::-webkit-scrollbar {
+    width: theme("spacing.2"); /* width of the entire scrollbar */
+  }
+
+  .markdown_scrollbar::-webkit-scrollbar-track {
+    background: theme("colors.gray.200"); /* color of the tracking area */
+  }
+
+  .markdown_scrollbar::-webkit-scrollbar-thumb {
+    background: theme("colors.gray.500"); /* color of the scroll thumb */
+  }
+
+  .markdown_scrollbar::-webkit-scrollbar-thumb:hover {
+    background: theme(
+      "colors.gray.700"
+    ); /* color of the scroll thumb on hover */
+  }
+}
+/* End Markdown Preview Section */
