@@ -5,7 +5,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { useScrollPosition } from "../../Utils/useScrollPosition";
 import { useAuth } from "../../Context/auth";
 import { useNavigate } from "react-router-dom";
-import logo from "../../../public/assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const activeStyle = "underline text-gray-500 underline-offset-4";
