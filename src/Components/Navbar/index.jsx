@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AppContext } from "../../Context";
-import { HiOutlineShoppingCart } from "react-icons/hi";
 import { useScrollPosition } from "../../Utils/useScrollPosition";
 import { useAuth } from "../../Context/auth";
 import { useNavigate } from "react-router-dom";
@@ -33,15 +32,6 @@ const Navbar = () => {
   // Navigate:
   let navigate = useNavigate();
 
-  // logout:
-  // const handleLogout = (e) => {
-  //   e.preventDefault();
-  //   auth.logout();
-  //   console.log("You have been logged out.");
-  //   navigate("/"); // Redirect to home page after logout
-  // };
-  // logout with confirmation (window.confirm)
-  // window.confirm() function to display a confirmation dialog when the user clicks on the logout button
   const handleLogout = (e) => {
     e.preventDefault();
     if (
@@ -61,7 +51,6 @@ const Navbar = () => {
         "md:transition-shadow-xl md:transition-color absolute inset-x-0 top-4 z-40 duration-500 md:fixed md:h-20 md:-translate-y-6 md:shadow-black lg:h-14",
       )}
     >
-      {/* <nav className="hidden sm:flex flex-col sm:flex-row justify-between items-center fixed z-10 w-full py-5 px-8 text-md font-light top-0"> */}
       <nav className="text-md fixed top-0 z-10 hidden w-full flex-col items-center justify-between px-8 py-0 font-light sm:flex sm:flex-row">
         <ul className="flex flex-col items-center gap-3 sm:flex-row">
           <li className="text-lg font-semibold">
@@ -70,13 +59,8 @@ const Navbar = () => {
               onClick={() => context.setSearchByCategory(null)}
               className="flex items-center gap-3"
             >
-              <img
-                src={logo}
-                alt="logo"
-                className="h-5"
-                // className="w-10 h-10 sm:w-8 sm:h-8"
-              />
-              <span>Collection Projects</span>
+              <img src={logo} alt="logo" className="h-5" />
+              <span>Collection</span>
             </NavLink>
           </li>
           <li className={hoverStyle}>
@@ -100,7 +84,6 @@ const Navbar = () => {
                   to="/TicTacToe"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("smartphones")}
                 >
                   Tic Tac Toe
                 </NavLink>
@@ -108,7 +91,6 @@ const Navbar = () => {
                   to="/Simon"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("laptops")}
                 >
                   Simon
                 </NavLink>
@@ -116,7 +98,6 @@ const Navbar = () => {
                   to="/Drum"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("laptops")}
                 >
                   Drum Machine
                 </NavLink>
@@ -135,7 +116,6 @@ const Navbar = () => {
                   to="/calculator"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("fragrances")}
                 >
                   Calculator
                 </NavLink>
@@ -143,7 +123,6 @@ const Navbar = () => {
                   to="/Pomodoro"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("skincare")}
                 >
                   25 + 5 Clock
                 </NavLink>
@@ -162,7 +141,6 @@ const Navbar = () => {
                   to="/Weather"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("skincare")}
                 >
                   Local Weather
                 </NavLink>
@@ -170,7 +148,6 @@ const Navbar = () => {
                   to="/Twitch"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("skincare")}
                 >
                   Twitch
                 </NavLink>
@@ -178,7 +155,6 @@ const Navbar = () => {
                   to="/Quote"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("skincare")}
                 >
                   Quote Generator
                 </NavLink>
@@ -186,7 +162,6 @@ const Navbar = () => {
                   to="/Wikipedia"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
-                  // onClick={() => context.setSearchByCategory("skincare")}
                 >
                   Wikipedia Viewer
                 </NavLink>
@@ -198,7 +173,6 @@ const Navbar = () => {
             <NavLink
               to="/Markdown"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
-              // onClick={() => context.setSearchByCategory("home-decoration")}
             >
               Markdown Previewer
             </NavLink>
