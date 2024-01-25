@@ -100,14 +100,14 @@ function App() {
         </div>
 
         <div className="rounded-lg bg-black p-4">
-          <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="text-dark-orange text-3xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
             25 + 5 Clock
           </h1>
         </div>
         <div className="flex w-6/12 items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
           <section
             id="break"
-            className="flex h-4/5 w-3/6 min-w-min flex-col items-center justify-center gap-2 rounded-lg bg-[#1D2B53] p-6 text-[#C6DAF1] sm:gap-3 md:gap-4 md:p-10"
+            className="flex h-4/5 w-3/6 min-w-min flex-col items-center justify-center gap-2 rounded-lg bg-black p-6 text-[#C6DAF1] sm:gap-3 md:gap-4 md:p-10"
           >
             <div id="break-label">
               <h2 className="whitespace-nowrap text-lg font-bold md:text-xl lg:text-2xl">
@@ -141,7 +141,7 @@ function App() {
           </section>
           <section
             id="session"
-            className="flex h-4/5 w-3/6 min-w-min flex-col items-center justify-center gap-2 rounded-lg bg-[#1D2B53] p-6 text-[#C6DAF1] sm:gap-3 md:gap-4 md:p-10"
+            className="flex h-4/5 w-3/6 min-w-min flex-col items-center justify-center gap-2 rounded-lg bg-black p-6 text-[#C6DAF1] sm:gap-3 md:gap-4 md:p-10"
           >
             <div id="session-label">
               <h2 className="whitespace-nowrap text-lg font-bold md:text-xl lg:text-2xl">
@@ -173,7 +173,7 @@ function App() {
             </div>
           </section>
         </div>
-        <section className="flex w-2/6 min-w-min flex-col items-center justify-center gap-4 rounded-lg bg-[#1D2B53] p-10 text-[#C6DAF1]">
+        <section className="flex w-2/6 min-w-min flex-col items-center justify-center gap-4 rounded-lg bg-black p-10 text-[#C6DAF1]">
           <h2 id="timer-label" className="text-2xl font-bold md:text-4xl">
             {timerLabel}
           </h2>
@@ -190,7 +190,7 @@ function App() {
             {formatTime(timeLeft)}
           </h3>
         </section>
-        <section className="flex w-20 items-center justify-around gap-4 text-[#1D2B53]">
+        <section className="flex w-20 items-center justify-around gap-4 text-black">
           <button id="start_stop" onClick={handleStartStop}>
             {timerRunning ? (
               <FaStop className="h-10 w-10" />
