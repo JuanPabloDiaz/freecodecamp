@@ -25,7 +25,7 @@ const QuoteGenerator = () => {
           Random Quote Generator
         </h1>
       </div>
-      <div className="flex h-screen w-screen flex-col items-center justify-center gap-4 p-2">
+      <div className="flex w-screen flex-col items-center justify-center gap-4 p-2">
         <h1 className="text-2xl font-bold text-white/80 sm:text-3xl md:text-4xl">
           Quote Generator
         </h1>
