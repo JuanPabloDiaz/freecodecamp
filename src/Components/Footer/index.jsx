@@ -18,8 +18,15 @@ const footer = () => {
                 />
                 Collection
               </a>
+              <p className="mt-2 text-sm text-gray-500">Never Stop Learning</p>
               <p className="mt-2 text-sm text-gray-500">
-                Design, Code and Ship!
+                Developer:
+                <a
+                  className="text-dark-orange ml-1 transition duration-500 ease-in-out hover:text-gray-700"
+                  href="https://www.linkedin.com/in/1diazdev/"
+                >
+                  Juan Diaz
+                </a>
               </p>
               <div className="mt-4">
                 <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
