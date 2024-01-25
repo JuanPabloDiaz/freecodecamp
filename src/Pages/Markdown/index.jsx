@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Layout from "../../Components/Layout";
 import "./markdown.css";
 
@@ -232,14 +232,6 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 function MarkdownPreviewComponent() {
   const [markdown, setMarkdown] = useState(defaultMarkdown);
 
-  // Prevents scrolling on the body when the modal is open
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, []);
-
   // To test the markdown parser, try this: https://markdown-it.github.io/
 
   return (
@@ -265,7 +257,7 @@ function MarkdownPreviewComponent() {
               id="preview"
               className="markdown_scrollbar flex h-96 flex-col items-start justify-start overflow-auto p-1 sm:w-full md:h-auto md:w-3/5"
             >
-              <h1 className="text-md fixed top-20 flex h-10 w-full items-end justify-start bg-white md:text-2xl">
+              <h1 className="text-md flex h-10 w-full items-end justify-start bg-white md:text-2xl">
                 Previewer
               </h1>
               <div id="MarkdownPreview" className="h-full w-full px-5 pt-5">
