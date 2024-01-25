@@ -28,7 +28,7 @@ function SearchBox({ onSearch }) {
       />
       <button
         type="submit"
-        className="flex items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+        className="bg-dark-orange hover:bg-dark-orange/60 flex items-center justify-center gap-2 rounded px-4 py-2 font-bold text-white transition duration-200"
       >
         Search
         <FiSearch className="h-4 w-4" />
@@ -39,7 +39,7 @@ function SearchBox({ onSearch }) {
 
 function Results({ results }) {
   return (
-    <ul className="text-md flex flex-col items-center justify-around gap-2 rounded-xl bg-slate-600 p-2 text-white sm:gap-3 md:gap-4 lg:gap-6">
+    <ul className="text-md flex flex-col items-center justify-around gap-2 rounded-xl bg-black p-2 text-white sm:gap-3 md:gap-4 lg:gap-6">
       {results.map((result) => (
         <li className="rounded-lg border bg-black p-2" key={result.pageid}>
           <a
@@ -78,7 +78,7 @@ function RandomButton() {
   return (
     <button
       onClick={handleClick}
-      className="flex w-80 items-center justify-center gap-2 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+      className="bg-dark-orange hover:bg-dark-orange/60 flex w-80 items-center justify-center gap-2 rounded px-4 py-2 font-bold text-white transition duration-200"
     >
       Random Article
       <FaRandom className="h-4 w-4" />
@@ -105,10 +105,10 @@ function WilipediaViewer() {
         <div className="relative mb-4 flex items-center justify-center">
           <h1 className="text-md font-medium sm:text-xl">Wilipedia Viewer</h1>
         </div>
-        <div className="flex h-60 w-6/12 items-center justify-around gap-2 rounded-xl border bg-slate-600 sm:gap-3 md:gap-4 lg:gap-6">
+        <div className="flex h-60 w-6/12 items-center justify-around gap-2 rounded-xl border bg-black sm:gap-3 md:gap-4 lg:gap-6">
           <div className="App flex flex-col items-center">
             <div className="pb-4">
-              <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
+              <h1 className="text-light-shade-gray text-3xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
                 Wikipedia Viewer
               </h1>
             </div>

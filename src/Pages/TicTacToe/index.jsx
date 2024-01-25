@@ -70,7 +70,7 @@ function Board() {
       <div className="status text-center text-2xl font-bold text-black/60">
         {status}
       </div>
-      <div className="shadow-[#5C5552 m-2 grid grid-flow-col grid-rows-3 rounded-xl bg-black p-4 shadow-xl">
+      <div className="bg-light-shade-gray m-2 grid grid-flow-col grid-rows-3 rounded-xl p-4 shadow-md shadow-[#5C5552]">
         {[...Array(9)].map((_, i) => (
           <Square
             key={i}
@@ -101,7 +101,7 @@ function TicTacToeGame() {
           <h1 className="text-md font-medium sm:text-xl">Tic-Tac-Toe Game</h1>
           <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         </div>
-        <div className="bg-light-shade-gray gap-2 rounded-lg p-4 sm:gap-3 md:gap-4 lg:gap-6">
+        <div className="gap-2 rounded-lg bg-black p-4 sm:gap-3 md:gap-4 lg:gap-6">
           <section className="">
             <Board />
           </section>

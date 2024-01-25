@@ -71,11 +71,11 @@ function Drum() {
         </div>
         <div
           id="drum-machine"
-          className=" rounded-lg border-2 border-black bg-[#4C4B51] p-6 shadow-md shadow-[#4C4B51]"
+          className=" rounded-lg border-2 border-black bg-black p-6 shadow-md shadow-[#4C4B51]"
         >
           <div
             id="display"
-            className="m-2 flex h-10 w-60 justify-center rounded-lg bg-[#08080A] p-2 text-white"
+            className="bg-light-shade-gray m-2 flex h-10 w-60 justify-center rounded-lg p-2 text-white"
           >
             {activeKey}
           </div>
