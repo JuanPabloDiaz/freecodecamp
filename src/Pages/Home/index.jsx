@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Home</h1>
+        <h1 className="text-md font-medium sm:text-xl">Certifications</h1>
       </div>
       <div className="flex w-[500px] justify-center gap-4 text-center">
         <img src={certificate1} alt="responsiveWebDesign" />
