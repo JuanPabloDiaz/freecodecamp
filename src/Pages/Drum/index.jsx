@@ -64,21 +64,18 @@ function Drum() {
   return (
     <>
       <Layout>
-        <div className="relative mb-4 flex items-center justify-center">
+        <div className="relative mb-4 flex items-center justify-center gap-4">
+          <FaDrum className="h-8 w-8" />
           <h1 className="text-md font-medium sm:text-xl">Drum Machine</h1>
+          <FaDrum className="h-8 w-8" />
         </div>
         <div
           id="drum-machine"
-          className=" rounded-lg border-2 border-black bg-[#4C4B51] p-6 shadow-md shadow-[#4C4B51]"
+          className=" rounded-lg border-2 border-black bg-black p-6 shadow-md shadow-[#4C4B51]"
         >
-          <div className="fixed top-20 flex items-center justify-center gap-3 p-2 text-sky-500">
-            <FaDrum className="h-8 w-8" />
-            <h1 className="mb-4 text-3xl font-bold">BeatBoxify</h1>
-            <FaDrum className="h-8 w-8" />
-          </div>
           <div
             id="display"
-            className="m-2 flex h-10 w-60 justify-center rounded-lg bg-[#08080A] p-2 text-white"
+            className="bg-light-shade-gray m-2 flex h-10 w-60 justify-center rounded-lg p-2 text-white"
           >
             {activeKey}
           </div>

@@ -33,8 +33,8 @@ function Calculator() {
 
   const buttonStyle = "bg-gray-500 text-white text-lg p-4 rounded-xl";
   const buttonTopStyle =
-    "bg-[#A5A5A5] text-black font-bold text-2xl rounded-xl h-16";
-  const buttonLeftStyle = "bg-[#F89B10] font-extrabold rounded-xl text-white";
+    "bg-light-shade-gray text-black font-bold text-2xl rounded-xl h-16";
+  const buttonLeftStyle = "bg-dark-orange font-extrabold rounded-xl text-white";
   return (
     <>
       <Layout>
@@ -137,7 +137,7 @@ function Calculator() {
           <button
             id="result"
             onClick={calculate}
-            className={`${buttonStyle} col-span-2 bg-[#F89B10] font-extrabold`}
+            className={`${buttonStyle} bg-dark-orange col-span-2 font-extrabold`}
           >
             =
           </button>

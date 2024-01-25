@@ -27,8 +27,8 @@ function Square({ value, onClick, isWinning }) {
   return (
     <button
       className={`square w-15 h-15 m-1 cursor-pointer rounded-xl text-center text-4xl font-bold leading-9 ${
-        isWinning ? "bg-green-500" : "bg-[#433633]"
-      } text-[#F7F0F5]`}
+        isWinning ? "bg-dark-orange" : "bg-[#433633]"
+      } text-white`}
       onClick={onClick}
     >
       {value}
@@ -70,7 +70,7 @@ function Board() {
       <div className="status text-center text-2xl font-bold text-black/60">
         {status}
       </div>
-      <div className="shadow-[#5C5552 m-2 grid grid-flow-col grid-rows-3 rounded-xl bg-[#DECBB7] p-4 shadow-xl">
+      <div className="bg-light-shade-gray m-2 grid grid-flow-col grid-rows-3 rounded-xl p-4 shadow-md shadow-[#5C5552]">
         {[...Array(9)].map((_, i) => (
           <Square
             key={i}
@@ -82,7 +82,7 @@ function Board() {
       </div>
       <button
         onClick={resetGame}
-        className="flex justify-center gap-8 rounded-xl  bg-[#DECBB7] px-4 py-2 text-center font-bold text-[#5C5552] transition duration-200 hover:bg-[#F7F0F5]"
+        className="bg-dark-orange flex justify-center gap-8  rounded-xl px-4 py-2 text-center font-bold text-[#5C5552] transition duration-200 hover:bg-[#F7F0F5]"
       >
         <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         <span>Reset Game</span>
@@ -96,10 +96,12 @@ function TicTacToeGame() {
   return (
     <>
       <Layout>
-        <div className="relative mb-4 flex items-center justify-center">
+        <div className="relative mb-4 flex items-center justify-center gap-4">
+          <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
           <h1 className="text-md font-medium sm:text-xl">Tic-Tac-Toe Game</h1>
+          <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         </div>
-        <div className="gap-2 rounded-lg bg-[#8F857D] p-4 sm:gap-3 md:gap-4 lg:gap-6">
+        <div className="gap-2 rounded-lg bg-black p-4 sm:gap-3 md:gap-4 lg:gap-6">
           <section className="">
             <Board />
           </section>
