@@ -59,14 +59,14 @@ function Twitch() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">Twitch</h1>
+          <h1 className="text-md font-medium sm:text-xl">TwitchTV JSON API</h1>
         </div>
         <div className="rounded-lg bg-black p-4">
           <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
             TwitchTV JSON API
           </h1>
         </div>
-        <section className="flex w-2/6 min-w-min flex-col items-center justify-center rounded-xl bg-[#1D2B53] p-3 text-[#C6DAF1]">
+        <section className="flex w-2/6 min-w-min flex-col items-center justify-center rounded-xl bg-black/40 p-3 text-[#C6DAF1]">
           <div className="flex items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
             <div className="">
               {twitchUsers.map((username) => (
