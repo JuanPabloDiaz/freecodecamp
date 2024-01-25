@@ -4,6 +4,7 @@ import { AppProvider } from "../../Context";
 
 import { AuthProvider } from "../../Context/auth"; // AuthContext is the context that will be used to store the user's data
 import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
 import "./App.css";
 
 import Home from "../Home";
@@ -103,6 +104,7 @@ const App = () => {
         <AuthProvider>
           <AppRoutes />
           <Navbar />
+          <Footer />
         </AuthProvider>
       </BrowserRouter>
     </AppProvider>
