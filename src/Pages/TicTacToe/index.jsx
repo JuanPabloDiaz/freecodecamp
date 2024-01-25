@@ -27,7 +27,7 @@ function Square({ value, onClick, isWinning }) {
   return (
     <button
       className={`square w-15 h-15 m-1 cursor-pointer rounded-xl text-center text-4xl font-bold leading-9 ${
-        isWinning ? "bg-dark-orange" : "bg-[#433633]"
+        isWinning ? "bg-white" : "bg-gray-700"
       } text-white`}
       onClick={onClick}
     >
@@ -67,7 +67,7 @@ function Board() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="status text-center text-2xl font-bold text-black/60">
+      <div className="status text-center text-2xl font-bold text-white/80">
         {status}
       </div>
       <div className="bg-light-shade-gray m-2 grid grid-flow-col grid-rows-3 rounded-xl p-4 shadow-md shadow-[#5C5552]">
