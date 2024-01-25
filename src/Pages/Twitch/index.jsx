@@ -42,7 +42,7 @@ function TwitchUser({ username }) {
         />
       </a>
       <a
-        className="w-1/6 font-bold text-blue-500 hover:text-blue-800"
+        className="text-dark-orange hover:text-dark-orange/60 w-1/6 font-bold transition duration-200"
         href={`https://www.twitch.tv/${username}`}
       >
         {user.display_name}
@@ -66,7 +66,7 @@ function Twitch() {
             TwitchTV JSON API
           </h1>
         </div>
-        <section className="flex w-2/6 min-w-min flex-col items-center justify-center rounded-xl bg-black/40 p-3 text-[#C6DAF1]">
+        <section className="flex w-2/6 min-w-min flex-col items-center justify-center rounded-xl bg-black p-3 text-[#C6DAF1]">
           <div className="flex items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
             <div className="">
               {twitchUsers.map((username) => (

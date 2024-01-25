@@ -96,8 +96,10 @@ function TicTacToeGame() {
   return (
     <>
       <Layout>
-        <div className="relative mb-4 flex items-center justify-center">
+        <div className="relative mb-4 flex items-center justify-center gap-4">
+          <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
           <h1 className="text-md font-medium sm:text-xl">Tic-Tac-Toe Game</h1>
+          <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         </div>
         <div className="bg-light-shade-gray gap-2 rounded-lg p-4 sm:gap-3 md:gap-4 lg:gap-6">
           <section className="">
