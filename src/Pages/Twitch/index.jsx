@@ -22,7 +22,7 @@ function TwitchUser({ username }) {
         `https://twitch-proxy.freecodecamp.rocks/helix/users?login=${username}`,
       )
       .then((response) => {
-        console.log(response.data.data[0]);
+        // console.log(response.data.data[0]);
         setUser(response.data.data[0]);
       });
   }, [username]);
@@ -42,7 +42,7 @@ function TwitchUser({ username }) {
         />
       </a>
       <a
-        className="text-dark-orange hover:text-dark-orange/60 w-1/6 font-bold transition duration-200"
+        className="w-1/6 font-bold text-dark-orange transition duration-200 hover:text-dark-orange/60"
         href={`https://www.twitch.tv/${username}`}
       >
         {user.display_name}
