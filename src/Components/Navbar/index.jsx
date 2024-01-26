@@ -12,7 +12,7 @@ const Navbar = () => {
   const dropdownStyle =
     "absolute flex flex-col gap-2 w-36 py-2 px-1 transition-all duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 bg-white text-black rounded-b-md shadow-md shadow-gray-500 z-50";
 
-  const context = useContext(AppContext);
+  // const context = useContext(AppContext);
 
   //scrollPosition:
   const [showDropdown, setShowDropdown] = useState(false);
@@ -54,11 +54,7 @@ const Navbar = () => {
       <nav className="text-md fixed top-0 z-10 hidden w-full flex-col items-center justify-between px-8 py-0 font-light sm:flex sm:flex-row">
         <ul className="flex flex-col items-center gap-3 sm:flex-row">
           <li className="text-lg font-semibold">
-            <NavLink
-              to="/"
-              onClick={() => context.setSearchByCategory(null)}
-              className="flex items-center gap-3"
-            >
+            <NavLink to="/" className="flex items-center gap-3">
               <img src={logo} alt="logo" className="h-5" />
               <span>Collection</span>
             </NavLink>
@@ -67,7 +63,6 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
-              onClick={() => context.setSearchByCategory(null)}
             >
               All
             </NavLink>

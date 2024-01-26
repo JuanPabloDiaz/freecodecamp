@@ -103,9 +103,9 @@ const App = () => {
     <AppProvider>
       <BrowserRouter>
         <AuthProvider>
+          <NavbarMobile />
           <AppRoutes />
           <Navbar />
-          <NavbarMobile />
           <Footer />
         </AuthProvider>
       </BrowserRouter>
