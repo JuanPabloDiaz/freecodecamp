@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useContext, useState } from "react";
-import { AppContext } from "../../Context";
+import { useState } from "react";
 import { useScrollPosition } from "../../Utils/useScrollPosition";
 import { useAuth } from "../../Context/auth";
 import { useNavigate } from "react-router-dom";
@@ -11,8 +10,6 @@ const Navbar = () => {
   const hoverStyle = "hover:text-gray-500 transition-colors duration-100";
   const dropdownStyle =
     "absolute flex flex-col gap-2 w-36 py-2 px-1 transition-all duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 bg-white text-black rounded-b-md shadow-md shadow-gray-500 z-50";
-
-  // const context = useContext(AppContext);
 
   //scrollPosition:
   const [showDropdown, setShowDropdown] = useState(false);
