@@ -6,7 +6,7 @@ const footer = () => {
   return (
     <>
       <footer className="body-font w-full bg-gray-100 text-gray-700">
-        <div className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:items-center lg:items-start">
+        <div className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap px-5 py-12 md:flex-row md:items-center lg:items-start">
           {/* logo: */}
           <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
             <a className="title-font flex items-center justify-center gap-2 font-medium text-gray-900 md:justify-start">
@@ -99,178 +99,190 @@ const footer = () => {
                 </li>
               </nav>
             </div>
-            <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div className="w-full min-w-fit px-4 md:w-1/2 lg:w-1/4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 Original Projects (demo)
               </h2>
               <nav className="mb-10 list-none">
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://tictactoe.jpdiaz.dev/"
-                  >
-                    Tic Tac Toe
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://simon.jpdiaz.dev/"
-                  >
-                    Simon
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://drum.jpdiaz.dev/"
-                  >
-                    Drum Machine
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://math.jpdiaz.dev/"
-                  >
-                    Calculator
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://25.jpdiaz.dev/"
-                  >
-                    25 + 5 Clock
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://weather.jpdiaz.dev/"
-                  >
-                    Local Weather
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://twitch.jpdiaz.dev/"
-                  >
-                    Twitch
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://quote.jpdiaz.dev/"
-                  >
-                    Random Quote Generator
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://wiki.jpdiaz.dev/"
-                  >
-                    Wikipedia Viewer
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://markdown.jpdiaz.dev/"
-                  >
-                    Markdown Previewer
-                  </a>
-                </li>
+                <div className="flex flex-wrap">
+                  <div className="w-1/2">
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://tictactoe.jpdiaz.dev/"
+                      >
+                        Tic Tac Toe
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://simon.jpdiaz.dev/"
+                      >
+                        Simon
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://drum.jpdiaz.dev/"
+                      >
+                        Drum Machine
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://math.jpdiaz.dev/"
+                      >
+                        Calculator
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://25.jpdiaz.dev/"
+                      >
+                        25 + 5 Clock
+                      </a>
+                    </li>
+                  </div>
+                  <div className="w-1/2">
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://weather.jpdiaz.dev/"
+                      >
+                        Local Weather
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://twitch.jpdiaz.dev/"
+                      >
+                        Twitch
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://quote.jpdiaz.dev/"
+                      >
+                        Random Quote Generator
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://wiki.jpdiaz.dev/"
+                      >
+                        Wikipedia Viewer
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://markdown.jpdiaz.dev/"
+                      >
+                        Markdown Previewer
+                      </a>
+                    </li>
+                  </div>
+                </div>
               </nav>
             </div>
-            <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div className="w-full min-w-fit px-4 md:w-1/2 lg:w-1/4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 Github Repo
               </h2>
               <nav className="mb-10 list-none">
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/ticTacToe"
-                  >
-                    Tic Tac Toe
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/simonGame"
-                  >
-                    Simon
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/drumMachine"
-                  >
-                    Drum Machine
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/calculator"
-                  >
-                    Calculator
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/25-5_clock"
-                  >
-                    25 + 5 Clock
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/weather"
-                  >
-                    Local Weather
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/twitch"
-                  >
-                    Twitch
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/random-quote-generator"
-                  >
-                    Random Quote Generator
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/wikipediaViewer"
-                  >
-                    Wikipedia Viewer
-                  </a>
-                </li>
-                <li className="mt-3">
-                  <a
-                    className="cursor-pointer text-gray-500 hover:text-gray-900"
-                    href="https://github.com/JuanPabloDiaz/markdownPreviewer"
-                  >
-                    Markdown Previewer
-                  </a>
-                </li>
+                <div className="flex flex-wrap">
+                  <div className="w-1/2">
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/ticTacToe"
+                      >
+                        Tic Tac Toe
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/simonGame"
+                      >
+                        Simon
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/drumMachine"
+                      >
+                        Drum Machine
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/calculator"
+                      >
+                        Calculator
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/25-5_clock"
+                      >
+                        25 + 5 Clock
+                      </a>
+                    </li>
+                  </div>
+                  <div className="w-1/2">
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/weather"
+                      >
+                        Local Weather
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/twitch"
+                      >
+                        Twitch
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/random-quote-generator"
+                      >
+                        Random Quote Generator
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/wikipediaViewer"
+                      >
+                        Wikipedia Viewer
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <a
+                        className="cursor-pointer text-gray-500 hover:text-gray-900"
+                        href="https://github.com/JuanPabloDiaz/markdownPreviewer"
+                      >
+                        Markdown Previewer
+                      </a>
+                    </li>
+                  </div>
+                </div>
               </nav>
             </div>
           </div>
