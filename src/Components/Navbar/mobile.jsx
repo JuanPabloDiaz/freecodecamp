@@ -25,19 +25,11 @@ function classNames(...classes) {
 }
 
 export default function Mobile() {
-  // const navigate = useNavigate();
   const location = useLocation();
-  // const [closeMenu, setCloseMenu] = useState(false);
   const [key, setKey] = useState(0);
-
-  // const handleLinkClick = (path, closeMenu) => {
-  //   navigate(path);
-  //   closeMenu();
-  // };
 
   useEffect(() => {
     if (location.pathname !== "/") {
-      // setCloseMenu(true);
       setKey((prevKey) => prevKey + 1);
     }
   }, [location]);
@@ -131,8 +123,6 @@ export default function Mobile() {
                 <NavLink
                   key={item.name}
                   to={item.href}
-                  // onClick={closeMenu}
-                  // onClick={() => setCloseMenu(true)}
                   onClick={() => setKey((prevKey) => prevKey + 1)}
                   className={classNames(
                     item.current
