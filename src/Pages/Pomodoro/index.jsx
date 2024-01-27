@@ -99,11 +99,11 @@ function App() {
           <h1 className="text-md font-medium sm:text-xl">25 + 5 Clock</h1>
         </div>
 
-        <div className="rounded-lg bg-black p-4">
+        {/* <div className="rounded-lg bg-black p-4">
           <h1 className="text-dark-orange text-3xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
             25 + 5 Clock
           </h1>
-        </div>
+        </div> */}
         <div className="flex w-6/12 items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
           <section
             id="break"
@@ -173,7 +173,7 @@ function App() {
             </div>
           </section>
         </div>
-        <section className="flex w-2/6 min-w-min flex-col items-center justify-center gap-4 rounded-lg bg-black p-10 text-[#C6DAF1]">
+        <section className="m-6 flex w-2/6 min-w-min flex-col items-center justify-center gap-4 rounded-lg bg-black p-10 text-[#C6DAF1]">
           <h2 id="timer-label" className="text-2xl font-bold md:text-4xl">
             {timerLabel}
           </h2>
