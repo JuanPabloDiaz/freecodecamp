@@ -3,8 +3,8 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../../assets/images/logo.png";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 // const navigation = [
 //   { name: "Certifications", href: "/", current: false },
@@ -24,14 +24,23 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
-  const navigate = useNavigate();
+export default function Mobile() {
+  // const navigate = useNavigate();
   const location = useLocation();
+  // const [closeMenu, setCloseMenu] = useState(false);
+  const [key, setKey] = useState(0);
 
-  const handleLinkClick = (path, closeMenu) => {
-    navigate(path);
-    closeMenu();
-  };
+  // const handleLinkClick = (path, closeMenu) => {
+  //   navigate(path);
+  //   closeMenu();
+  // };
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      // setCloseMenu(true);
+      setKey((prevKey) => prevKey + 1);
+    }
+  }, [location]);
 
   const navigation = [
     { name: "Certifications", href: "/", current: location.pathname === "/" },
@@ -87,8 +96,9 @@ export default function Example() {
     },
   ];
   return (
-    <Disclosure as="nav" className="bg-gray-800 md:hidden">
-      {({ open, closeMenu }) => (
+    // <Disclosure as="nav" className="bg-gray-800 md:hidden" open={!closeMenu}>
+    <Disclosure as="nav" className="bg-gray-800 md:hidden" key={key}>
+      {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6">
             <div className="relative flex h-16 items-center justify-between">
@@ -121,7 +131,9 @@ export default function Example() {
                 <NavLink
                   key={item.name}
                   to={item.href}
-                  onClick={() => handleLinkClick(item.href, closeMenu)}
+                  // onClick={closeMenu}
+                  // onClick={() => setCloseMenu(true)}
+                  onClick={() => setKey((prevKey) => prevKey + 1)}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
