@@ -4,7 +4,8 @@ import certificate1 from "../../assets/images/legacyFrontEnd.png";
 import certificate2 from "../../assets/images/responsiveWebDesign.png";
 
 const Home = () => {
-  // const context = useContext(AppContext);
+  const skills =
+    "rounded-lg bg-black p-2 font-bold text-dark-orange shadow-lg shadow-light-shade-gray hover:shadow-none hover:bg-dark-orange hover:text-black transition duration-300 ease-in-out";
 
   return (
     <Layout>
@@ -26,6 +27,34 @@ const Home = () => {
             alt="Responsive Web Design"
           />
         </a>
+      </div>
+      <div className="mt-6 flex flex-col gap-4">
+        <h1 className="text-md text-center font-medium sm:text-xl">Projects</h1>
+        <p>
+          This site is a collection of all the projects I've built to get this
+          two certifications.
+        </p>
+        <p>
+          The goal was to build a series of projects to improve my skills in...
+        </p>
+        <ul className="grid grid-flow-col grid-rows-3 justify-around gap-4 text-center">
+          <li className={`${skills}`}>HTML</li>
+          <li className={` ${skills}`}>Markdown</li>
+          <li className={` ${skills}`}>GitHub</li>
+          <li className={` ${skills}`}>CSS</li>
+          <li className={` ${skills}`}>Tailwind CSS</li>
+          <li className={` ${skills}`}>Sass</li>
+          <li className={` ${skills}`}>JavaScript</li>
+          <li className={` ${skills}`}>React</li>
+          <li className={` ${skills}`}>jQuery</li>
+          <li className={` ${skills}`}>Git</li>
+          <li className={` ${skills}`}>Node.js</li>
+          <li className={` ${skills}`}>Bootstrap</li>
+        </ul>
+        <p>
+          You can view the live version of the projects by clicking on the links
+          in the footer.
+        </p>
       </div>
     </Layout>
   );
