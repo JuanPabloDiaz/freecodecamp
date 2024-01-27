@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useScrollPosition } from "../../Utils/useScrollPosition";
-import { useAuth } from "../../Context/auth";
-import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { PiCertificateDuotone } from "react-icons/pi";
 
@@ -136,7 +134,6 @@ const Navbar = () => {
               </div>
             )}
           </li>
-
           <li className={hoverStyle}>
             <NavLink
               to="/Markdown"
