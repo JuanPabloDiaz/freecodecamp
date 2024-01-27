@@ -38,16 +38,16 @@ const Home = () => {
           The goal was to build a series of projects to improve my skills in...
         </p>
         <ul className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          <li className={`${skills}`}>HTML</li>
-          <li className={` ${skills}`}>Markdown</li>
-          <li className={` ${skills}`}>GitHub</li>
-          <li className={` ${skills}`}>CSS</li>
-          <li className={` ${skills}`}>Tailwind CSS</li>
-          <li className={` ${skills}`}>Sass</li>
           <li className={` ${skills}`}>JavaScript</li>
           <li className={` ${skills}`}>React</li>
-          <li className={` ${skills}`}>jQuery</li>
+          <li className={` ${skills}`}>Tailwind CSS</li>
           <li className={` ${skills}`}>Git</li>
+          <li className={` ${skills}`}>HTML</li>
+          <li className={` ${skills}`}>CSS</li>
+          <li className={` ${skills}`}>Markdown</li>
+          <li className={` ${skills}`}>GitHub</li>
+          <li className={` ${skills}`}>jQuery</li>
+          <li className={` ${skills}`}>Sass</li>
           <li className={` ${skills}`}>Node.js</li>
           <li className={` ${skills}`}>Bootstrap</li>
         </ul>
