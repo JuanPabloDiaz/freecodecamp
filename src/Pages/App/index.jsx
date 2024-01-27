@@ -22,6 +22,7 @@ import Simon from "../Simon";
 import Weather from "../Weather";
 import Twitch from "../Twitch";
 import Wikipedia from "../Wikipedia";
+import Certificate from "../Certificate";
 
 // import Logout from "../Logout";
 
@@ -57,6 +58,8 @@ const AppRoutes = () => {
     { path: "/Weather", element: <Weather /> },
     { path: "/Twitch", element: <Twitch /> },
     { path: "/Wikipedia", element: <Wikipedia /> },
+    { path: "/Certificate", element: <Certificate /> },
+
     // Private Routes
 
     {

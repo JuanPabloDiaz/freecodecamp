@@ -148,7 +148,7 @@ const Navbar = () => {
             className={`flex items-center justify-center rounded-full border-2 border-black p-1 text-black hover:border-black/40 ${hoverStyle}`}
           >
             <NavLink
-              to="/"
+              to="/certificate"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               <PiCertificateDuotone
