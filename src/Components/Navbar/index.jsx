@@ -23,23 +23,6 @@ const Navbar = () => {
   const scrollPosition = useScrollPosition();
   // console.log(scrollPosition);
 
-  // AuthContext:
-  const auth = useAuth();
-  // console.log("in Navbar, Auth.user: ", auth.user);
-
-  // Navigate:
-  let navigate = useNavigate();
-
-  const handleLogout = (e) => {
-    e.preventDefault();
-    if (
-      window.confirm(`${auth.user.username}, Are you sure you want to logout?`)
-    ) {
-      auth.logout();
-      console.log("You have been logged out.");
-      navigate("/"); // Redirect to home page after logout
-    }
-  };
   return (
     <header
       className={classNamesNavBarScroll(
@@ -50,27 +33,19 @@ const Navbar = () => {
       )}
     >
       <nav className="text-md fixed top-0 z-10 hidden w-full flex-col items-center justify-between px-8 py-0 font-light sm:flex sm:flex-row">
-        <ul className="flex flex-col items-center gap-3 sm:flex-row">
+        <ul className="flex flex-col items-center gap-8 sm:flex-row">
           <li className="text-lg font-semibold">
             <NavLink to="/" className="flex items-center gap-3">
               <img src={logo} alt="logo" className="h-5" />
               <span>Collection</span>
             </NavLink>
           </li>
-          {/* <li className={hoverStyle}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            >
-              <PiCertificateDuotone className={`text-black ${hoverStyle}`} />
-            </NavLink>
-          </li> */}
           <li
             onMouseEnter={() => setShowDropdownTech(true)}
             onMouseLeave={() => setShowDropdownTech(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Games
+            Gaming
             {showDropdownTech && (
               <div className={dropdownStyle}>
                 <NavLink
@@ -102,7 +77,7 @@ const Navbar = () => {
             onMouseLeave={() => setShowDropdown(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Tools
+            Productivity
             {showDropdown && (
               <div className={dropdownStyle}>
                 <NavLink
@@ -127,7 +102,7 @@ const Navbar = () => {
             onMouseLeave={() => setShowDropdown(false)}
             className={`group relative cursor-pointer ${hoverStyle}`}
           >
-            Tools with an API
+            Consuming API&apos;s
             {showDropdown && (
               <div className={dropdownStyle}>
                 <NavLink
@@ -167,49 +142,10 @@ const Navbar = () => {
               to="/Markdown"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Markdown Previewer
+              Editing
             </NavLink>
           </li>
         </ul>
-        {/* <ul className="hidden items-center gap-3 sm:flex">
-          {auth.user && (
-            <>
-              <li className={hoverStyle}>
-                <NavLink
-                  to="/my-account"
-                  className={({ isActive }) =>
-                    isActive ? activeStyle : undefined
-                  }
-                >
-                  My Account
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  // to="/Logout"
-                  onClick={handleLogout}
-                  className={({ isActive }) =>
-                    isActive ? activeStyle : undefined
-                  }
-                >
-                  Logout
-                </NavLink>
-              </li>
-            </>
-          )}
-          {!auth.user && (
-            <li className={hoverStyle}>
-              <NavLink
-                to="/sign-in"
-                className={({ isActive }) =>
-                  isActive ? activeStyle : undefined
-                }
-              >
-                Sign In
-              </NavLink>
-            </li>
-          )}
-        </ul> */}
         <ul className="hidden items-center gap-3 sm:flex">
           <li
             className={`flex items-center justify-center rounded-full border-2 border-black p-1 text-black hover:border-black/40 ${hoverStyle}`}
