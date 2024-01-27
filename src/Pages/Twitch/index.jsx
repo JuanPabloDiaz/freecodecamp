@@ -22,7 +22,6 @@ function TwitchUser({ username }) {
         `https://twitch-proxy.freecodecamp.rocks/helix/users?login=${username}`,
       )
       .then((response) => {
-        // console.log(response.data.data[0]);
         setUser(response.data.data[0]);
       });
   }, [username]);
@@ -30,7 +29,7 @@ function TwitchUser({ username }) {
   if (!user) return null;
 
   return (
-    <div className="flex items-center justify-between gap-6 px-4 py-2">
+    <div className="flex flex-col items-center justify-between gap-6 px-4 py-2 sm:flex-row">
       <a
         className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white"
         href={`https://www.twitch.tv/${username}`}
@@ -42,12 +41,12 @@ function TwitchUser({ username }) {
         />
       </a>
       <a
-        className="w-1/6 font-bold text-dark-orange transition duration-200 hover:text-dark-orange/60"
+        className="w-full font-bold text-dark-orange transition duration-200 hover:text-dark-orange/60 sm:w-1/6"
         href={`https://www.twitch.tv/${username}`}
       >
         {user.display_name}
       </a>
-      <p className="w-3/6 font-semibold">
+      <p className="w-full font-semibold sm:w-3/6">
         {user.description.split(" ").slice(0, 18).join(" ")}
       </p>
     </div>
@@ -59,15 +58,12 @@ function Twitch() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">TwitchTV JSON API</h1>
-        </div>
-        <div className="rounded-lg bg-black p-4">
-          <h1 className="text-3xl font-extrabold text-[#FFD23F] sm:text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="sm:text-md text-sm font-medium md:text-xl">
             TwitchTV JSON API
           </h1>
         </div>
-        <section className="flex w-2/6 min-w-min flex-col items-center justify-center rounded-xl bg-black p-3 text-[#C6DAF1]">
-          <div className="flex items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
+        <section className="flex w-full min-w-min flex-col items-center justify-center rounded-xl bg-black p-3 text-[#C6DAF1] sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/6">
+          <div className="flex flex-col items-center justify-around gap-2 sm:flex-row sm:gap-3 md:gap-4 lg:gap-6">
             <div className="">
               {twitchUsers.map((username) => (
                 <TwitchUser key={username} username={username} />
