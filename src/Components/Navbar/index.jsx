@@ -57,14 +57,14 @@ const Navbar = () => {
               <span>Collection</span>
             </NavLink>
           </li>
-          <li className={hoverStyle}>
+          {/* <li className={hoverStyle}>
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               <PiCertificateDuotone className={`text-black ${hoverStyle}`} />
             </NavLink>
-          </li>
+          </li> */}
           <li
             onMouseEnter={() => setShowDropdownTech(true)}
             onMouseLeave={() => setShowDropdownTech(false)}
@@ -171,7 +171,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <ul className="hidden items-center gap-3 sm:flex">
+        {/* <ul className="hidden items-center gap-3 sm:flex">
           {auth.user && (
             <>
               <li className={hoverStyle}>
@@ -209,6 +209,20 @@ const Navbar = () => {
               </NavLink>
             </li>
           )}
+        </ul> */}
+        <ul className="hidden items-center gap-3 sm:flex">
+          <li
+            className={`flex items-center justify-center rounded-full border-2 border-black p-1 text-black hover:border-black/40 ${hoverStyle}`}
+          >
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              <PiCertificateDuotone
+                className={`h-8 w-8 text-black ${hoverStyle}`}
+              />
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
