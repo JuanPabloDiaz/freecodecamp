@@ -37,7 +37,7 @@ const Home = () => {
         <p>
           The goal was to build a series of projects to improve my skills in...
         </p>
-        <ul className="grid grid-flow-col grid-rows-3 justify-around gap-4 text-center">
+        <ul className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           <li className={`${skills}`}>HTML</li>
           <li className={` ${skills}`}>Markdown</li>
           <li className={` ${skills}`}>GitHub</li>
