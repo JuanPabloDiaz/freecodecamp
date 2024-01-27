@@ -1,139 +1,166 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
-import Button from "./Button";
+import { useState, useRef, useEffect } from "react";
+import GameBtn from "./GameBtn";
 import Layout from "../../Components/Layout";
-import "./simon.css";
 
-const SimonGame = () => {
+const colors = ["green", "red", "yellow", "blue"];
+
+function SimonGame() {
+  // states
   const [sequence, setSequence] = useState([]);
-  const [userSequence, setUserSequence] = useState([]);
-  const [gameOver, setGameOver] = useState(false);
-  const [gameWon, setGameWon] = useState(false);
-  const [activeButton, setActiveButton] = useState(null);
+  const [playing, setPlaying] = useState(false);
+  const [playingIdx, setPlayingIdx] = useState(0);
 
-  // Create Audio objects for each sound
-  const sounds = useMemo(
-    () => [
-      new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
-      new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
-      new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
-      new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-    ],
-    [],
-  );
+  // refs
+  const greenRef = useRef(null);
+  const redRef = useRef(null);
+  const yellowRef = useRef(null);
+  const blueRef = useRef(null);
 
-  // Add a new random button to the sequence
-  const addToSequence = useCallback(() => {
-    const newButton = Math.floor(Math.random() * 4) + 1;
-    setSequence((prevSequence) => [...prevSequence, newButton]);
-    sounds[newButton - 1].play(); // Play the sound (commented out for now to avoid sound when clicking the start new game buttons)
-  }, [setSequence, sounds]);
-
-  // Handle user button press
-  // const handleButtonPress = (button) => {
-  //   setUserSequence([...userSequence, button]);
-  //   sounds[button - 1].play(); // Play the sound
-  // };
-  const handleButtonPress = useCallback(
-    (button) => {
-      setUserSequence((prevSequence) => [...prevSequence, button]);
-      sounds[button - 1].play();
-    },
-    [setUserSequence, sounds],
-  );
-
-  // Check if the user's sequence is correct
-  useEffect(() => {
-    if (userSequence.length === sequence.length) {
-      for (let i = 0; i < sequence.length; i++) {
-        if (sequence[i] !== userSequence[i]) {
-          setGameOver(true);
-          return;
-        }
-      }
-      //   setUserSequence([]);
-      //   addToSequence();
-      // }
-      setUserSequence([]);
-      if (sequence.length === 20) {
-        // Assuming game is won when sequence reaches 20
-        setGameWon(true);
-      } else {
-        addToSequence();
-      }
-    }
-  }, [userSequence, sequence, addToSequence]);
-
-  // Start a new game
-  const startNewGame = useCallback(() => {
+  // functions
+  const resetGame = () => {
     setSequence([]);
-    setUserSequence([]);
-    setGameOver(false);
-    setGameWon(false);
-    setActiveButton(null);
-    addToSequence();
-    sounds[0].play(); // Move the call to play() here
-  }, [addToSequence, sounds]); // Add dependencies here
+    setPlaying(false);
+    setPlayingIdx(0);
+  };
 
+  const addNewColor = () => {
+    const color = colors[Math.floor(Math.random() * 4)];
+    const newSequence = [...sequence, color];
+    setSequence(newSequence);
+  };
+
+  const handleNextLevel = () => {
+    if (!playing) {
+      setPlaying(true);
+      addNewColor();
+    }
+  };
+
+  const handleColorClick = (e) => {
+    if (playing) {
+      e.target.classList.add("opacity-50");
+
+      setTimeout(() => {
+        e.target.classList.remove("opacity-50");
+
+        const clickColor = e.target.getAttribute("color");
+
+        // clicked the correct color of the sequence
+        if (sequence[playingIdx] === clickColor) {
+          // clicked the last color of the sequence
+          if (playingIdx === sequence.length - 1) {
+            setTimeout(() => {
+              setPlayingIdx(0);
+              addNewColor();
+            }, 250);
+          }
+
+          // missing some colors of the sequence to be clicked
+          else {
+            setPlayingIdx(playingIdx + 1);
+          }
+        }
+
+        // clicked the incorrect color of the sequence
+        else {
+          resetGame();
+          // alert("You Lost!");
+        }
+      }, 250);
+    }
+  };
+
+  // useEffect
   useEffect(() => {
-    startNewGame(); // Start a new game when the component mounts
-  }, [startNewGame]); // Add startNewGame to the dependency array
+    // show sequence
+    if (sequence.length > 0) {
+      const showSequence = (idx = 0) => {
+        let ref = null;
+
+        if (sequence[idx] === "green") ref = greenRef;
+        if (sequence[idx] === "red") ref = redRef;
+        if (sequence[idx] === "yellow") ref = yellowRef;
+        if (sequence[idx] === "blue") ref = blueRef;
+
+        // highlight the ref
+        setTimeout(() => {
+          ref.current.classList.add("brightness-[2.5]");
+
+          setTimeout(() => {
+            ref.current.classList.remove("brightness-[2.5]");
+            if (idx < sequence.length - 1) showSequence(idx + 1);
+          }, 250);
+        }, 250);
+      };
+
+      showSequence();
+    }
+  }, [sequence]);
 
   return (
-    <Layout>
-      <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Simon Game</h1>
-      </div>
-      <div className="wrap flex flex-col items-center justify-center">
-        <div className="grid grid-flow-col grid-rows-2 rounded-full bg-[#292929] p-4">
-          <Button
-            color="green"
-            onPress={() => handleButtonPress(1)}
-            isActive={activeButton === 1}
-          />
-          <Button
-            color="yellow"
-            onPress={() => handleButtonPress(2)}
-            isActive={activeButton === 2}
-          />
-          <Button
-            color="red"
-            onPress={() => handleButtonPress(3)}
-            isActive={activeButton === 3}
-          />
-          <Button
-            color="blue"
-            onPress={() => handleButtonPress(4)}
-            isActive={activeButton === 4}
-          />
+    <>
+      <Layout>
+        <div className="relative mb-4 flex items-center justify-center">
+          <h1 className="text-md font-medium sm:text-xl">Simon Game</h1>
         </div>
+        {/* Main container */}
+        <div className="flex h-[500px] w-[500px] items-center justify-center rounded-full bg-neutral-800 text-white">
+          {/* Game container */}
+          <div className="relative flex flex-col items-center justify-center">
+            {/* Green and red container */}
+            <div>
+              {/* Green button */}
+              <GameBtn
+                color="green"
+                border="rounded-tl-full"
+                bg="bg-green-500"
+                onClick={handleColorClick}
+                ref={greenRef}
+              />
 
-        <div className="absolute left-[50%] top-[50%] m-[-122px] h-[250px] w-[250px] rounded-full border-8 border-gray-800 bg-[#ece7ee]">
-          <h1 className="mt-9 text-5xl font-extrabold text-gray-800">
-            Simon
-            <span className="relative top-[-20px] text-2xl font-semibold">
-              ®
-            </span>
-          </h1>
-          <div className="">
-            <div className="w-15 relative mx-3 mb-1 mt-4 inline-block text-center">
-              <h1 className="count text-[#430710]">--</h1>
-              <h3 className="font-oswald mt-1 text-center text-xs ">COUNT</h3>
+              {/* Red button */}
+              <GameBtn
+                color="red"
+                border="rounded-tr-full"
+                bg="bg-red-500"
+                onClick={handleColorClick}
+                ref={redRef}
+              />
             </div>
-            <div className="relative inline-block w-[50px]">
-              <div
-                className="full-red but active:shadow-6xl pointer-events-auto relative -top-1 m-auto h-8 w-10 cursor-pointer rounded-full border-4 border-[#444] bg-yellow-400 shadow-md active:top-[0.15px] active:bg-yellow-100 active:shadow-[#292929]"
-                id="start"
-                onClick={startNewGame}
-              ></div>
-              <h3 className="font-oswald mt-1 text-center text-xs">START</h3>
+
+            {/* Yellow and blue container */}
+            <div>
+              {/* Yellow button */}
+              <GameBtn
+                color="yellow"
+                border="rounded-bl-full"
+                bg="bg-yellow-400"
+                onClick={handleColorClick}
+                ref={yellowRef}
+              />
+
+              {/* Blue button */}
+              <GameBtn
+                color="blue"
+                border="rounded-br-full"
+                bg="bg-blue-500"
+                onClick={handleColorClick}
+                ref={blueRef}
+              />
             </div>
+
+            {/* Play button */}
+            <button
+              className="absolute h-[150px] w-[150px] rounded-full bg-neutral-900 text-xl font-bold text-white duration-200 hover:scale-105 sm:h-[175px] sm:w-[175px] sm:text-2xl"
+              onClick={handleNextLevel}
+            >
+              {sequence.length === 0 ? "Play" : sequence.length}
+            </button>
           </div>
-          {gameOver && <p className="h-18 text-2xl text-red-500">Game Over!</p>}
-          {gameWon && <p className="h-18 text-2xl text-green-500">You Won!</p>}
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
-};
+}
 
 export default SimonGame;
