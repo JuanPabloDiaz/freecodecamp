@@ -3,30 +3,92 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../../assets/images/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const navigation = [
-  { name: "Certifications", href: "/", current: true },
-  { name: "Tic Tac Toc Game", href: "/TicTacToe", current: false },
-  { name: "Simon Game", href: "/simon", current: false },
-  { name: "Drum Machine", href: "/drum", current: false },
-  { name: "Calculator", href: "/calculator", current: false },
-  { name: "25 + 5 Clock", href: "/pomodoro", current: false },
-  { name: "Local Weather", href: "/weather", current: false },
-  { name: "Twitch", href: "/twitch", current: false },
-  { name: "Random Quote Generator", href: "/quote", current: false },
-  { name: "Wikipedia Viewer", href: "/wikipedia", current: false },
-  { name: "Markdown Previewer", href: "/markdown", current: false },
-];
+// const navigation = [
+//   { name: "Certifications", href: "/", current: false },
+//   { name: "Tic Tac Toc Game", href: "/TicTacToe", current: false },
+//   { name: "Simon Game", href: "/simon", current: false },
+//   { name: "Drum Machine", href: "/drum", current: false },
+//   { name: "Calculator", href: "/calculator", current: false },
+//   { name: "25 + 5 Clock", href: "/pomodoro", current: false },
+//   { name: "Local Weather", href: "/weather", current: false },
+//   { name: "Twitch", href: "/twitch", current: false },
+//   { name: "Random Quote Generator", href: "/quote", current: false },
+//   { name: "Wikipedia Viewer", href: "/wikipedia", current: false },
+//   { name: "Markdown Previewer", href: "/markdown", current: false },
+// ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLinkClick = (path, closeMenu) => {
+    navigate(path);
+    closeMenu();
+  };
+
+  const navigation = [
+    { name: "Certifications", href: "/", current: location.pathname === "/" },
+    {
+      name: "Tic Tac Toc Game",
+      href: "/TicTacToe",
+      current: location.pathname === "/TicTacToe",
+    },
+    {
+      name: "Simon Game",
+      href: "/simon",
+      current: location.pathname === "/simon",
+    },
+    {
+      name: "Drum Machine",
+      href: "/drum",
+      current: location.pathname === "/drum",
+    },
+    {
+      name: "Calculator",
+      href: "/calculator",
+      current: location.pathname === "/calculator",
+    },
+    {
+      name: "25 + 5 Clock",
+      href: "/pomodoro",
+      current: location.pathname === "/pomodoro",
+    },
+    {
+      name: "Local Weather",
+      href: "/weather",
+      current: location.pathname === "/weather",
+    },
+    {
+      name: "Twitch",
+      href: "/twitch",
+      current: location.pathname === "/twitch",
+    },
+    {
+      name: "Random Quote Generator",
+      href: "/quote",
+      current: location.pathname === "/quote",
+    },
+    {
+      name: "Wikipedia Viewer",
+      href: "/wikipedia",
+      current: location.pathname === "/wikipedia",
+    },
+    {
+      name: "Markdown Previewer",
+      href: "/markdown",
+      current: location.pathname === "/markdown",
+    },
+  ];
   return (
     <Disclosure as="nav" className="bg-gray-800 md:hidden">
-      {({ open }) => (
+      {({ open, closeMenu }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6">
             <div className="relative flex h-16 items-center justify-between">
@@ -50,25 +112,6 @@ export default function Example() {
                     alt="FreeCodeCamp Logo"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <NavLink
-                        key={item.name}
-                        to={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium",
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </NavLink>
-                    ))}
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -78,6 +121,7 @@ export default function Example() {
                 <NavLink
                   key={item.name}
                   to={item.href}
+                  onClick={() => handleLinkClick(item.href, closeMenu)}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
