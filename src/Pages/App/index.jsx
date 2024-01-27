@@ -18,7 +18,7 @@ import Calculator from "../Calculator";
 import Quote from "../Quote";
 import Markdown from "../Markdown";
 import Drum from "../Drum";
-import Simon from "../Simon/oldindexGame";
+import Simon from "../Simon";
 import Weather from "../Weather";
 import Twitch from "../Twitch";
 import Wikipedia from "../Wikipedia";
