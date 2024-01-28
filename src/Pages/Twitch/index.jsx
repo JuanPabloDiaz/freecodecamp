@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Layout from "@/Components/Layout";
+import PropTypes from "prop-types";
 
 const twitchUsers = [
   "ESL_SC2",
@@ -15,6 +16,10 @@ const twitchUsers = [
 
 function TwitchUser({ username }) {
   const [user, setUser] = useState(null);
+
+  TwitchUser.propTypes = {
+    username: PropTypes.string.isRequired,
+  };
 
   useEffect(() => {
     axios

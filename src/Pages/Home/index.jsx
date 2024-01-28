@@ -1,7 +1,5 @@
 // import { useContext } from "react";
 import Layout from "../../Components/Layout";
-import certificate1 from "../../assets/images/legacyFrontEnd.png";
-import certificate2 from "../../assets/images/responsiveWebDesign.png";
 
 const Home = () => {
   const skills =
