@@ -1,5 +1,8 @@
 // source code: https://tailwindcomponents.com/component/tailwind-css-footer-1
 import logo from "../../assets/images/logo.png";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import { BsDot } from "react-icons/bs";
+
 const footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -19,30 +22,21 @@ const footer = () => {
             </a>
             <p className="mt-2 text-sm text-gray-500">Never Stop Learning</p>
             <p className="mt-2 text-sm text-gray-500">
-              Developer:
+              Developed by
               <a
-                className="text-dark-orange ml-1 transition duration-500 ease-in-out hover:text-gray-700"
+                className="ml-1 font-semibold transition duration-500 ease-in-out hover:text-black hover:underline hover:underline-offset-2"
                 href="https://www.linkedin.com/in/1diazdev/"
               >
                 Juan Diaz
               </a>
             </p>
-            <div className="mt-4">
+            <div className="mt-8">
               <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
                   href="https://twitter.com/1diazdev"
                 >
-                  <svg
-                    fill="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="h-5 w-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                  </svg>
+                  <TbBrandGithubFilled className="h-5 w-5" />
                 </a>
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
@@ -64,10 +58,25 @@ const footer = () => {
                     <circle cx="4" cy="4" r="2" stroke="none"></circle>
                   </svg>
                 </a>
+                <a
+                  className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
+                  href="https://twitter.com/1diazdev"
+                >
+                  <svg
+                    fill="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
               </span>
             </div>
           </div>
-          <div className="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left">
+          <div className="-mb-16 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left">
             <div className="w-full px-4 md:w-1/2 lg:w-1/4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 About
@@ -288,10 +297,15 @@ const footer = () => {
           </div>
         </div>
         <div className="bg-gray-300">
-          <div className="container mx-auto px-5 py-4">
-            <p className="text-sm capitalize text-gray-700 xl:text-center">
-              © {currentYear} All rights reserved
-            </p>
+          <div className="container flex items-center justify-center gap-1 py-4 text-sm capitalize text-gray-700">
+            <p className="">© {currentYear} All rights reserved</p>
+            <BsDot />
+            <a
+              className="transition duration-500 ease-in-out hover:font-semibold hover:text-black hover:underline hover:underline-offset-2"
+              href="https://www.linkedin.com/in/1diazdev/"
+            >
+              Juan diaz
+            </a>
           </div>
         </div>
       </footer>
