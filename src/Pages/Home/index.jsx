@@ -12,10 +12,10 @@ const Home = () => {
             About
           </h1>
         </div>
-        <h2 className="text-md font-semibold text-gray-500">
+        <h2 className="pb-4">
           My name is
           <a
-            className="juanchosFont pl-2 text-4xl text-gray-600 transition duration-500 ease-in-out hover:text-dark-orange hover:underline"
+            className="juanchosFont pl-2 text-4xl font-semibold text-gray-600 transition duration-500 ease-in-out hover:text-dark-orange hover:underline"
             href="https://www.linkedin.com/in/1diazdev/"
           >
             Juan Diaz
@@ -27,33 +27,35 @@ const Home = () => {
           growth opportunities.
         </p>
         <div className="mt-6 flex flex-col gap-4">
-          <h2 className="text-md text-center font-medium sm:text-xl">
+          <h2 className="text-md pb-4 pt-2 text-left font-medium sm:text-xl">
             A Collection Project
           </h2>
-          <p>
-            This website is a collection of all the projects I&apos;ve built to
-            get these
-            <a
-              className="px-1 font-medium  transition duration-500 ease-in-out hover:text-blue-200 hover:underline"
-              href="/Certificate"
-            >
-              two certifications
-            </a>
-            from FreeCodeCamp:
-          </p>
-          <div className="flex flex-col justify-center gap-4 py-4 text-center lg:flex-row">
-            <a
-              className="rounded-lg border-2 p-2 font-bold text-black transition duration-300 ease-in-out hover:bg-dark-orange hover:text-black"
-              href="https://www.freecodecamp.org/certification/1diazdev/legacy-front-end"
-            >
-              Legacy Front End
-            </a>
-            <a
-              className="rounded-lg border-2 p-2 font-bold text-black transition duration-300 ease-in-out hover:bg-dark-orange hover:text-black"
-              href="https://www.freecodecamp.org/certification/1diazdev/responsive-web-design"
-            >
-              Responsive Web Design
-            </a>
+          <div className="flex items-center justify-stretch gap-8">
+            <p>
+              This website is a collection of all the projects I&apos;ve built
+              to get these
+              <a
+                className="px-1 font-medium  transition duration-500 ease-in-out hover:text-blue-200 hover:underline"
+                href="/Certificate"
+              >
+                two certifications
+              </a>
+              from FreeCodeCamp:
+            </p>
+            <div className="flex flex-col justify-center gap-8 text-center lg:flex-row">
+              <a
+                className="rounded-lg border-2 p-2 font-bold text-black transition duration-300 ease-in-out hover:bg-dark-orange hover:text-black"
+                href="https://www.freecodecamp.org/certification/1diazdev/legacy-front-end"
+              >
+                Legacy Front End
+              </a>
+              <a
+                className="rounded-lg border-2 p-2 font-bold text-black transition duration-300 ease-in-out hover:bg-dark-orange hover:text-black"
+                href="https://www.freecodecamp.org/certification/1diazdev/responsive-web-design"
+              >
+                Responsive Web Design
+              </a>
+            </div>
           </div>
           <p className="w-fit rounded-lg border px-2 py-1">
             This website is
@@ -62,7 +64,7 @@ const Home = () => {
             </span>
             part of the official FreeCodeCamp site.
           </p>
-          <h2 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+          <h2 className="text-md pb-4 pt-2 text-left font-medium sm:text-xl">
             Description
           </h2>
           <p>
