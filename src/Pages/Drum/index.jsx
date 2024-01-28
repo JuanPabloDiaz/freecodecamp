@@ -2,6 +2,7 @@ import DrumPad from "./DrumPad.jsx";
 import Layout from "@/Components/Layout/index.jsx";
 import { useEffect, useState } from "react";
 import { FaDrum } from "react-icons/fa";
+import "./drum.css";
 
 function Drum() {
   const [activeKey, setActiveKey] = useState("");
@@ -94,6 +95,7 @@ function Drum() {
             ))}
           </div>
         </div>
+        <div className="bg-drumsImg"></div>
       </Layout>
     </>
   );
