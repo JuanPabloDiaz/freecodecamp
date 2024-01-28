@@ -11,7 +11,9 @@ const Home = () => {
     <Layout>
       <section className="w-11/12">
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">About Me</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            About
+          </h1>
         </div>
         <h2 className="text-md font-semibold text-gray-500">
           My name is
@@ -63,7 +65,9 @@ const Home = () => {
             </span>
             part of the official FreeCodeCamp site.
           </p>
-          <h2 className="text-md font-medium sm:text-xl">Description</h2>
+          <h2 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            Description
+          </h2>
           <p>
             While working on the requirement to get the certifications, I
             created multiple projects with it&apos;s own GitHub repositories.

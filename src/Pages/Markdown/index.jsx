@@ -238,7 +238,9 @@ function MarkdownPreviewComponent() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">Markdown Preview</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            Markdown Preview
+          </h1>
         </div>
         <div className="flex h-auto w-screen items-center justify-center">
           {/* <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1> */}

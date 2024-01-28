@@ -21,14 +21,11 @@ const QuoteGenerator = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">
-          Random Quote Generator
+        <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+          Quote Generator
         </h1>
       </div>
       <div className="flex w-screen flex-col items-center justify-center gap-4 p-2">
-        <h1 className="text-2xl font-bold text-white/80 sm:text-3xl md:text-4xl">
-          Quote Generator
-        </h1>
         <div className="m-6 flex min-h-[180px] w-full flex-col items-start justify-around gap-6 rounded-lg bg-[#333333] p-6 text-white/90 shadow-md shadow-[#666666] sm:w-[500px] md:w-[600px] lg:w-[700px]">
           <p className="text-xl font-semibold text-[#F8F9FA] sm:text-xl md:text-2xl">
             {endpoints[0]?.content}

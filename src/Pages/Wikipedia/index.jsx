@@ -103,7 +103,9 @@ function WilipediaViewer() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">Wilipedia Viewer</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            Wilipedia Viewer
+          </h1>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-around gap-2 rounded-xl border bg-black sm:h-60 sm:w-6/12 sm:gap-3 md:gap-4 lg:gap-6">
           <div className="App flex flex-col items-center">

@@ -6,7 +6,9 @@ const MyAccount = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex flex-col items-center justify-center gap-7">
-        <h1 className="text-md font-medium sm:text-xl">My Account</h1>
+        <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+          My Account
+        </h1>
         <p className="text-2xl font-semibold">Welcome, {auth.user.username}</p>
 
         {/* {console.log("username: ", auth.user.username)}

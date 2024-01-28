@@ -81,7 +81,9 @@ const SimonGame = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Simon Game</h1>
+        <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+          Simon Game
+        </h1>
       </div>
       <div className="wrap flex flex-col items-center justify-center">
         <div className="grid grid-flow-col grid-rows-2 rounded-full bg-[#292929] p-4">

@@ -39,7 +39,9 @@ function Calculator() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">Calculator</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            Calculator
+          </h1>
         </div>
         <form className="flex w-full justify-center p-5">
           <input
@@ -137,7 +139,7 @@ function Calculator() {
           <button
             id="result"
             onClick={calculate}
-            className={`${buttonStyle} bg-dark-orange col-span-2 font-extrabold`}
+            className={`${buttonStyle} col-span-2 bg-dark-orange font-extrabold`}
           >
             =
           </button>

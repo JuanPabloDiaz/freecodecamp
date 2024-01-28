@@ -96,7 +96,9 @@ function App() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-md font-medium sm:text-xl">25 + 5 Clock</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            25 + 5 Clock
+          </h1>
         </div>
 
         {/* <div className="rounded-lg bg-black p-4">

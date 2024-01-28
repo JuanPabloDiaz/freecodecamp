@@ -66,7 +66,9 @@ function Drum() {
       <Layout>
         <div className="relative mb-4 flex items-center justify-center gap-4">
           <FaDrum className="h-8 w-8" />
-          <h1 className="text-md font-medium sm:text-xl">Drum Machine</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            Drum Machine
+          </h1>
           <FaDrum className="h-8 w-8" />
         </div>
         <div
@@ -75,7 +77,7 @@ function Drum() {
         >
           <div
             id="display"
-            className="bg-light-shade-gray m-2 flex h-10 w-60 justify-center rounded-lg p-2 text-white"
+            className="m-2 flex h-10 w-60 justify-center rounded-lg bg-light-shade-gray p-2 text-white"
           >
             {activeKey}
           </div>

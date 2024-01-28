@@ -10,7 +10,9 @@ const Home = () => {
   return (
     <Layout>
       <div className="relative mb-4 flex items-center justify-center">
-        <h1 className="text-md font-medium sm:text-xl">Certifications</h1>
+        <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+          Certifications
+        </h1>
       </div>
       <div className="flex flex-col justify-center gap-4 text-center lg:flex-row">
         <a href="https://www.freecodecamp.org/certification/1diazdev/legacy-front-end">

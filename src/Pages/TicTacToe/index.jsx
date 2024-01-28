@@ -70,7 +70,7 @@ function Board() {
       <div className="status text-center text-2xl font-bold text-white/80">
         {status}
       </div>
-      <div className="bg-light-shade-gray m-2 grid grid-flow-col grid-rows-3 rounded-xl p-4 shadow-md shadow-[#5C5552]">
+      <div className="m-2 grid grid-flow-col grid-rows-3 rounded-xl bg-light-shade-gray p-4 shadow-md shadow-[#5C5552]">
         {[...Array(9)].map((_, i) => (
           <Square
             key={i}
@@ -82,7 +82,7 @@ function Board() {
       </div>
       <button
         onClick={resetGame}
-        className="bg-dark-orange flex justify-center gap-8  rounded-xl px-4 py-2 text-center font-bold text-[#5C5552] transition duration-200 hover:bg-[#F7F0F5]"
+        className="flex justify-center gap-8 rounded-xl  bg-dark-orange px-4 py-2 text-center font-bold text-[#5C5552] transition duration-200 hover:bg-[#F7F0F5]"
       >
         <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         <span>Reset Game</span>
@@ -98,7 +98,9 @@ function TicTacToeGame() {
       <Layout>
         <div className="relative mb-4 flex items-center justify-center gap-4">
           <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
-          <h1 className="text-md font-medium sm:text-xl">Tic-Tac-Toe Game</h1>
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
+            Tic-Tac-Toe Game
+          </h1>
           <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         </div>
         <div className="gap-2 rounded-lg bg-black p-4 sm:gap-3 md:gap-4 lg:gap-6">
