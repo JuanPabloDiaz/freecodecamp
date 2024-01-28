@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"; // Hooks to consume the API
 import Layout from "../../Components/Layout";
+import avatar from "../../assets/images/thinking.png";
 
 const QuoteGenerator = () => {
   // UseState is a hook to add the info from the API to the state
@@ -40,6 +41,24 @@ const QuoteGenerator = () => {
         >
           New Quote
         </button>
+        <div className="flex">
+          <img
+            src={avatar}
+            alt="Avatar"
+            className="hidden h-60 w-auto lg:block"
+          />
+          <img
+            src={avatar}
+            alt="Avatar"
+            className="hidden h-60 w-auto lg:block"
+          />
+          <img
+            src={avatar}
+            alt="Avatar"
+            className="hidden h-60 w-auto lg:block"
+          />
+          <img src={avatar} alt="Avatar" className="h-60 w-auto" />
+        </div>
       </div>
     </Layout>
   );
