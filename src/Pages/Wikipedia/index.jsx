@@ -42,15 +42,20 @@ function Results({ results }) {
   return (
     <ul className="text-md flex flex-col items-center justify-around gap-2 rounded-xl bg-black p-2 text-white sm:gap-3 md:gap-4 lg:gap-6">
       {results.map((result) => (
-        <li className="rounded-lg border bg-black p-2" key={result.pageid}>
-          <a
-            className="font-bold"
-            href={`https://en.wikipedia.org/?curid=${result.pageid}`}
+        <a
+          key={result.pageid}
+          className="font-bold"
+          href={`https://en.wikipedia.org/?curid=${result.pageid}`}
+        >
+          <li
+            className="cursor-pointer rounded-lg border bg-light-shade-gray p-2 text-black transition duration-300 hover:border-black hover:bg-dark-orange"
+            key={result.pageid}
           >
             {result.title}
-          </a>
-          <p>{stripHtmlTags(result.snippet)}</p>
-        </li>
+
+            <p>{stripHtmlTags(result.snippet)}</p>
+          </li>
+        </a>
       ))}
     </ul>
   );
