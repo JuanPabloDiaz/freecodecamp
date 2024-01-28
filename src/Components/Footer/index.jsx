@@ -24,7 +24,7 @@ const footer = () => {
             <p className="mt-2 text-sm text-gray-500">
               Developed by
               <a
-                className="ml-1 font-semibold transition duration-500 ease-in-out hover:text-black hover:underline hover:underline-offset-2"
+                className=" juanchosFont ml-1 text-lg font-semibold transition duration-500 ease-in-out hover:text-black hover:underline hover:underline-offset-2"
                 href="https://www.linkedin.com/in/1diazdev/"
               >
                 Juan Diaz

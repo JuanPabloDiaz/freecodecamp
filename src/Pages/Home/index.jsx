@@ -1,4 +1,3 @@
-// import { useContext } from "react";
 import Layout from "../../Components/Layout";
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
         <h2 className="text-md font-semibold text-gray-500">
           My name is
           <a
-            className="pl-2 text-2xl text-black transition duration-500 ease-in-out hover:text-dark-orange hover:underline"
+            className="juanchosFont pl-2 text-4xl text-gray-600 transition duration-500 ease-in-out hover:text-dark-orange hover:underline"
             href="https://www.linkedin.com/in/1diazdev/"
           >
             Juan Diaz
@@ -33,9 +32,9 @@ const Home = () => {
           </h2>
           <p>
             This website is a collection of all the projects I&apos;ve built to
-            get this
+            get these
             <a
-              className="px-1 text-blue-500  transition duration-500 ease-in-out hover:text-blue-200 hover:underline"
+              className="px-1 font-medium  transition duration-500 ease-in-out hover:text-blue-200 hover:underline"
               href="/Certificate"
             >
               two certifications
@@ -58,7 +57,7 @@ const Home = () => {
           </div>
           <p className="w-fit rounded-lg border px-2 py-1">
             This website is
-            <span className="px-1 text-dark-orange underline underline-offset-4">
+            <span className="px-1 font-semibold underline underline-offset-4">
               not
             </span>
             part of the official FreeCodeCamp site.
@@ -69,19 +68,24 @@ const Home = () => {
           <p>
             While working on the requirement to get the certifications, I
             created multiple projects with it&apos;s own GitHub repositories.
-            Then, I realiced that it will be a great idea to merge them into one
-            project to improve the user experience and consolidate a more robust
-            portfolio.
+            Then, I realized that it would be a great idea to merge them into
+            one project to improve the user experience and consolidate a more
+            robust portfolio.
           </p>
           <p>
-            This is how this site was born. As an effort to showcase my skills
+            This is how this site was born. In an effort to showcase my skills
             and knowledge in web development after completing the FreeCodeCamp
-            &quot;Legacy Front End&quot; and &quot;Responsive Web Design&quot;
+            <span className="px-1 font-light italic">
+              Legacy Front End
+            </span> and{" "}
+            <span className="px-1 font-light italic">
+              Responsive Web Design
+            </span>
             certifications.
           </p>
           <p>
-            The goal of this certifications was to build a series of projects to
-            improve my skills in...
+            The goal of these certifications was to build a series of projects
+            to improve my skills in...
           </p>
           <ul className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             <li className={` ${skills}`}>JavaScript</li>
