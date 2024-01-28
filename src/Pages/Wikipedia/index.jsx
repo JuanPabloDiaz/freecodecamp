@@ -4,6 +4,7 @@ import axios from "axios";
 import { FiSearch } from "react-icons/fi";
 import { FaRandom } from "react-icons/fa";
 import PropTypes from "prop-types";
+import imgWiki from "../../assets/images/wikipedia.png";
 
 function SearchBox({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -107,13 +108,9 @@ function WilipediaViewer() {
             Wilipedia Viewer
           </h1>
         </div>
-        <div className="flex h-full w-full flex-col items-center justify-around gap-2 rounded-xl border bg-black sm:h-60 sm:w-6/12 sm:gap-3 md:gap-4 lg:gap-6">
-          <div className="App flex flex-col items-center">
-            <div className="pb-4">
-              <h1 className="text-3xl font-extrabold text-light-shade-gray sm:text-3xl md:text-4xl lg:text-5xl">
-                Wikipedia Viewer
-              </h1>
-            </div>
+        <div className="flex h-auto w-full flex-col items-center justify-around gap-2 rounded-xl border bg-black py-4 sm:w-6/12 sm:gap-3 md:gap-4 lg:gap-6">
+          <div className="flex flex-col items-center">
+            <img className="h-auto w-96" src={imgWiki} alt="Wikipedia" />
             <SearchBox onSearch={handleSearch} />
             <Results results={results} />
             <RandomButton />

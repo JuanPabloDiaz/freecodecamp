@@ -101,7 +101,7 @@ function SimonGame() {
     <>
       <Layout>
         <div className="relative mb-4 flex items-center justify-center">
-          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-2xl md:text-3xl lg:text-3xl xl:text-4xl">
+          <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
             Simon Game
           </h1>
         </div>

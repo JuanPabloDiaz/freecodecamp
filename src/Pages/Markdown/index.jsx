@@ -243,10 +243,9 @@ function MarkdownPreviewComponent() {
           </h1>
         </div>
         <div className="flex h-auto w-screen items-center justify-center">
-          {/* <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1> */}
           <div className="flex h-5/6 w-11/12 flex-col-reverse gap-1 rounded-lg p-2 shadow-lg shadow-black md:flex-row">
-            <div className="m-2 flex h-96 flex-col items-start justify-start rounded-lg border-2 border-black p-1 shadow shadow-lg shadow-violet-950 sm:w-full md:h-auto md:w-2/5">
-              <h1 className="text-md md:text-2xl">Editor</h1>
+            <div className="m-2 flex h-96 flex-col items-start justify-start rounded-lg border-2 border-black p-1 shadow-md shadow-violet-950 sm:w-full md:h-auto md:w-2/5">
+              <h2 className="text-md md:text-2xl">Editor</h2>
               <textarea
                 id="editor"
                 className="markdown_scrollbar h-full w-full border-t-2 p-1"
@@ -259,9 +258,9 @@ function MarkdownPreviewComponent() {
               id="preview"
               className="markdown_scrollbar flex h-96 flex-col items-start justify-start overflow-auto p-1 sm:w-full md:h-auto md:w-3/5"
             >
-              <h1 className="text-md flex h-10 w-full items-end justify-start bg-white md:text-2xl">
+              <h2 className="text-md flex h-10 w-full items-end justify-start bg-white md:text-2xl">
                 Previewer
-              </h1>
+              </h2>
               <div id="MarkdownPreview" className="h-full w-full px-5 pt-5">
                 <MarkdownPreview
                   source={markdown}

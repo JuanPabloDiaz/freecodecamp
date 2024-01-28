@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Layout from "@/Components/Layout";
 import { TiWeatherStormy, TiWeatherPartlySunny } from "react-icons/ti";
-import { AiOutlineLoading } from "react-icons/ai";
+// import { AiOutlineLoading } from "react-icons/ai";
 
 function LocalWeather() {
   const [location, setLocation] = useState({});
@@ -52,9 +52,6 @@ function LocalWeather() {
         </div>
         <div className="bg-transpent flex items-center justify-center gap-3 rounded-lg p-4 text-[#121420]">
           <TiWeatherStormy className="h-10 w-10" />
-          <h1 className="text-3xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
-            Local Weather
-          </h1>
           <TiWeatherPartlySunny className="h-10 w-10 " />
         </div>
         <div className="flex w-4/12 items-center justify-around gap-2 p-4  sm:gap-3 md:gap-4 lg:gap-6">

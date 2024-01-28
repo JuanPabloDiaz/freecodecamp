@@ -100,12 +100,6 @@ function App() {
             25 + 5 Clock
           </h1>
         </div>
-
-        {/* <div className="rounded-lg bg-black p-4">
-          <h1 className="text-dark-orange text-3xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
-            25 + 5 Clock
-          </h1>
-        </div> */}
         <div className="flex w-6/12 items-center justify-around gap-2 sm:gap-3 md:gap-4 lg:gap-6">
           <section
             id="break"
