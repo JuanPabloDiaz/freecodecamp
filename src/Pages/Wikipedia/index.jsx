@@ -92,7 +92,7 @@ function RandomButton() {
   );
 }
 
-function WilipediaViewer() {
+function wikipediaViewer() {
   const [results, setResults] = useState([]);
 
   const handleSearch = (searchTerm) => {
@@ -110,7 +110,7 @@ function WilipediaViewer() {
       <Layout>
         <div className="relative mb-12 flex items-center justify-center">
           <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
-            Wilipedia Viewer
+            Wikipedia Viewer
           </h1>
         </div>
         <div className="flex h-auto w-full flex-col items-center justify-around gap-2 rounded-xl border bg-black py-4 sm:w-6/12 sm:gap-3 md:gap-4 lg:gap-6">
@@ -126,4 +126,4 @@ function WilipediaViewer() {
   );
 }
 
-export default WilipediaViewer;
+export default wikipediaViewer;

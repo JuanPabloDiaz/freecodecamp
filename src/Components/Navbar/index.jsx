@@ -30,7 +30,7 @@ const Navbar = () => {
         "md:transition-shadow-xl md:transition-color absolute inset-x-0 top-4 z-40 duration-500 md:fixed md:h-20 md:-translate-y-6 md:shadow-black lg:h-14",
       )}
     >
-      <nav className="text-md fixed top-0 z-10 hidden w-full flex-col items-center justify-between px-8 py-0 font-light sm:flex sm:flex-row">
+      <nav className="text-md fixed top-0 z-10 hidden w-full flex-col items-center justify-between px-8 py-0 font-mono sm:flex sm:flex-row">
         <ul className="flex flex-col items-center gap-8 sm:flex-row">
           <li className="text-lg font-semibold">
             <NavLink to="/" className="flex items-center gap-3">
