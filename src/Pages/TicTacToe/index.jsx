@@ -82,7 +82,7 @@ function Board() {
       </div>
       <button
         onClick={resetGame}
-        className="flex justify-center gap-8 rounded-xl  bg-dark-orange px-4 py-2 text-center font-bold text-[#5C5552] transition duration-200 hover:bg-[#F7F0F5]"
+        className="mt-2 flex justify-center gap-8  rounded-xl bg-dark-orange px-4 py-2 text-center font-bold text-[#5C5552] transition duration-200 hover:bg-[#F7F0F5]"
       >
         <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         <span>Reset Game</span>
@@ -103,7 +103,7 @@ function TicTacToeGame() {
           </h1>
           <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
         </div>
-        <div className="gap-2 rounded-lg bg-black p-4 sm:gap-3 md:gap-4 lg:gap-6">
+        <div className="gap-2 rounded-lg bg-black p-12 sm:gap-3 md:gap-4 lg:gap-6">
           <section className="">
             <Board />
           </section>
