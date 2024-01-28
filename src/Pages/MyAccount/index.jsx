@@ -5,7 +5,7 @@ const MyAccount = () => {
   const auth = useAuth();
   return (
     <Layout>
-      <div className="relative mb-4 flex flex-col items-center justify-center gap-7">
+      <div className="relative mb-4 flex items-center justify-center">
         <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
           My Account
         </h1>

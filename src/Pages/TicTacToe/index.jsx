@@ -96,7 +96,7 @@ function TicTacToeGame() {
   return (
     <>
       <Layout>
-        <div className="relative mb-4 flex items-center justify-center gap-4">
+        <div className="relative mb-12 flex items-center justify-center gap-4">
           <GiTicTacToe className="h-6 w-6 rounded-lg bg-transparent" />
           <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
             Tic-Tac-Toe Game

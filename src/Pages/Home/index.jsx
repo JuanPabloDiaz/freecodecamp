@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Layout>
       <section className="w-11/12">
-        <div className="relative mb-4 flex items-center justify-center">
+        <div className="relative mb-12 flex items-center justify-center">
           <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
             About
           </h1>
