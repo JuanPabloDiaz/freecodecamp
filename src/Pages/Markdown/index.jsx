@@ -240,7 +240,7 @@ function MarkdownPreviewComponent() {
         <div className="relative mb-4 flex items-center justify-center">
           <h1 className="text-md font-medium sm:text-xl">Markdown Preview</h1>
         </div>
-        <div className="flex h-screen w-screen items-center justify-center">
+        <div className="flex h-auto w-screen items-center justify-center">
           {/* <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1> */}
           <div className="flex h-5/6 w-11/12 flex-col-reverse gap-1 rounded-lg p-2 shadow-lg shadow-black md:flex-row">
             <div className="m-2 flex h-96 flex-col items-start justify-start rounded-lg border-2 border-black p-1 shadow shadow-lg shadow-violet-950 sm:w-full md:h-auto md:w-2/5">
