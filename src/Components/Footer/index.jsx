@@ -9,7 +9,7 @@ const footer = () => {
   return (
     <>
       <footer className="body-font w-full bg-gray-100 text-gray-700">
-        <div className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap px-5 py-12 md:flex-row md:items-center lg:items-start">
+        <div className="container flex flex-col flex-wrap items-center justify-center px-5 pb-12 pt-10 md:flex-row md:items-center">
           {/* logo: */}
           <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
             <a className="title-font flex items-center justify-center gap-2 font-medium text-gray-900 md:justify-start">
@@ -76,8 +76,8 @@ const footer = () => {
               </span>
             </div>
           </div>
-          <div className="-mb-16 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left">
-            <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+          <div className="-mb-16 mt-10 flex flex-grow flex-col justify-around text-center md:flex-row md:pl-20 md:text-left">
+            <section className="min-w-fit px-4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 About
               </h2>
@@ -107,14 +107,14 @@ const footer = () => {
                   </a>
                 </li>
               </nav>
-            </div>
-            <div className="w-full min-w-fit px-4 md:w-1/2 lg:w-1/4">
+            </section>
+            <section className="min-w-fit px-4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 Original Projects (demo)
               </h2>
               <nav className="mb-10 list-none">
-                <div className="flex flex-wrap">
-                  <div className="w-1/2">
+                <div className="flex flex-wrap gap-2 text-justify md:gap-10 lg:gap-16">
+                  <div className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -156,7 +156,7 @@ const footer = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -200,14 +200,14 @@ const footer = () => {
                   </div>
                 </div>
               </nav>
-            </div>
-            <div className="w-full min-w-fit px-4 md:w-1/2 lg:w-1/4">
+            </section>
+            <section className="min-w-fit px-4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 Github Repo
               </h2>
               <nav className="mb-10 list-none">
-                <div className="flex flex-wrap">
-                  <div className="w-1/2">
+                <div className="flex flex-wrap gap-2 text-justify md:gap-10 lg:gap-16">
+                  <div className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -249,7 +249,7 @@ const footer = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -293,11 +293,11 @@ const footer = () => {
                   </div>
                 </div>
               </nav>
-            </div>
+            </section>
           </div>
         </div>
         <div className="bg-gray-300">
-          <div className="container flex items-center justify-center gap-1 py-4 text-sm capitalize text-gray-700">
+          <div className="flex items-center justify-center gap-1 py-4 text-sm capitalize text-gray-700">
             <p className="">© {currentYear} All rights reserved</p>
             <BsDot />
             <a
