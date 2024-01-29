@@ -33,7 +33,6 @@ const footer = () => {
                 Juan Diaz
               </a>
             </p>
-
             <div className="mt-8">
               <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
                 <a
@@ -80,7 +79,7 @@ const footer = () => {
               </span>
             </div>
           </div>
-          <div className="-mb-16 mt-10 flex flex-grow flex-col justify-around text-center md:flex-row md:pl-20 md:text-left">
+          <div className="-mb-4 mt-10 flex flex-grow flex-col justify-around text-center md:flex-row md:pl-20 md:text-left">
             <section className="min-w-fit px-4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 About
