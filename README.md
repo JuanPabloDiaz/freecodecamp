@@ -2,14 +2,31 @@
 
 # FreeCodeCamp Collection Projects 📚
 
-This repo is a collection of all the projects I've built as part of the **[freeCodeCamp’s legacy Front End Development Certification](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)**. The goal was to build a series of projects to improve my skills in HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Node.js, Git, and GitHub.
+Embark on my journey through **[freeCodeCamp’s legacy Front End Development Certification!](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)** These projects showcase my growth in HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Node.js, Git, and GitHub. From mastering responsive design with Bootstrap to building interactive functionalities with React, each project reflects my dedication for learning and experimentation.
+
+While working on the requirements to obtain the certifications, I created multiple projects, each with its own GitHub repository and website. However, I wasn't satisfied with the result. After some time, I realized that merging them into a single repository would be a great idea. This project was thus conceived, aiming to improve user experience and consolidate a more robust portfolio.
 
 <div align="center">
 
 [![freeCodeCamp](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://freecodecamp.jpdiaz.dev/)
-[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/freecodecamp)
+[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://stackblitz.com/github.com/JuanPabloDiaz/freecodecamp)
 
 </div>
+
+In this repository, you'll find the following projects to explore:
+
+- **Tic Tac Toe** ( [View Demo](https://tictactoe.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/ticTacToe) ): A classic game of Tic Tac Toe with a twist: players can choose to play against a computer.
+- **Simon Game** ( [View Demo](https://simon.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/simonGame) ): A memory game that challenges players to remember a sequence of colors and sounds.
+- **Drum Machine** ( [View Demo](https://drum.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/drumMachine) ): A drum machine that allows users to play sounds by pressing keys or clicking buttons.
+- **Calculator** ( [View Demo](https://math.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/calculator) ): A simple calculator that performs basic arithmetic operations.
+- **Pomodoro Clock** ( [View Demo](https://25.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/25-5_clock) ): A productivity timer that helps users stay focused and productive.
+- **Local Weather** ( [View Demo](https://weather.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/weather) ): A local weather app that displays the weather in the user's current location.
+- **Twitch.tv JSON API** ( [View Demo](https://twitch.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/twitch): A Twitch.tv JSON API that displays the status of several Twitch.tv channels.
+- **Random Quote Machine** ( [View Demo](https://quote.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/random-quote-generator) ): A random quote machine that displays quotes from famous people.
+- **Wikipedia Viewer** ( [View Demo](https://wiki.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/wikipediaViewer) ): A Wikipedia viewer that allows users to search for articles on Wikipedia.
+- **Markdown Previewer** ( [View Demo](https://markdown.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/markdownPreviewer) ): A markdown previewer that converts plain text into HTML.
+
+Get a glimpse into my technical capabilities and passion for front-end development!
 
 ### Desktop View 🖥️
 
