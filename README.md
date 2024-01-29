@@ -20,11 +20,11 @@ In this repository, you'll find the following projects to explore:
 - **Drum Machine** ( [View Demo](https://drum.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/drumMachine) ): A drum machine that allows users to play sounds by pressing keys or clicking buttons.
 - **Calculator** ( [View Demo](https://math.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/calculator) ): A simple calculator that performs basic arithmetic operations.
 - **Pomodoro Clock** ( [View Demo](https://25.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/25-5_clock) ): A productivity timer that helps users stay focused and productive.
-- **Local Weather** ( [View Demo](https://weather.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/weather) ): A local weather app that displays the weather in the user's current location.
-- **Twitch.tv JSON API** ( [View Demo](https://twitch.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/twitch): A Twitch.tv JSON API that displays the status of several Twitch.tv channels.
-- **Random Quote Machine** ( [View Demo](https://quote.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/random-quote-generator) ): A random quote machine that displays quotes from famous people.
-- **Wikipedia Viewer** ( [View Demo](https://wiki.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/wikipediaViewer) ): A Wikipedia viewer that allows users to search for articles on Wikipedia.
-- **Markdown Previewer** ( [View Demo](https://markdown.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/markdownPreviewer) ): A markdown previewer that converts plain text into HTML.
+- **Local Weather** ( [View Demo](https://weather.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/weather) ): A local weather app that displays the weather in the user's current location by using the Geolocation API.
+- **Twitch.tv JSON API** ( [View Demo](https://twitch.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/twitch): A Twitch.tv JSON API that displays the status of several Twitch.tv channels by using the Twitch.tv JSON API.
+- **Random Quote Generator** ( [View Demo](https://quote.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/random-quote-generator) ): A random quote generator that displays quotes from famous people by consuming an API.
+- **Wikipedia Viewer** ( [View Demo](https://wiki.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/wikipediaViewer) ): A Wikipedia viewer that allows users to search for articles on Wikipedia or view a random article. It consumes the Wikipedia API.
+- **Markdown Previewer** ( [View Demo](https://markdown.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/markdownPreviewer) ): A markdown previewer that converts plain text into HTML. Alowing users to write in markdown and see the output as they type.
 
 Get a glimpse into my technical capabilities and passion for front-end development!
 
@@ -54,12 +54,12 @@ Welcome to the [freecodecamp](https://freecodecamp.jpdiaz.dev), collection.
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
 ![Tailwind-CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)
 ![React-Router](https://img.shields.io/badge/React%20Router-CA4245.svg?style=for-the-badge&logo=React-Router&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=Figma&logoColor=white)
+![React-Icons](https://img.shields.io/badge/React%20Icons-00D8FF.svg?style=for-the-badge&logo=React-Icons&logoColor=white)
 
 Here's a closer look at the tech stack:
 
 - Front-End: React.js, Vite.js, Tailwind CSS
-- Back-End: N/A
+- Back-End: API
 - Deployment: Vercel
 
 ## Get started 🛠️
