@@ -38,7 +38,7 @@ const Home = () => {
                 className="px-1 font-medium  transition duration-500 ease-in-out hover:text-blue-200 hover:underline"
                 href="/Certificate"
               >
-                two certifications
+                certifications
               </a>
               from FreeCodeCamp:
             </p>
@@ -48,6 +48,12 @@ const Home = () => {
                 href="https://www.freecodecamp.org/certification/1diazdev/legacy-front-end"
               >
                 Legacy Front End
+              </a>
+              <a
+                className="rounded-lg border-2 p-2 font-bold text-black transition duration-300 ease-in-out hover:bg-dark-orange hover:text-black"
+                href="https://www.freecodecamp.org/certification/1diazdev/front-end-development-libraries"
+              >
+                Front End Development Libraries
               </a>
               <a
                 className="rounded-lg border-2 p-2 font-bold text-black transition duration-300 ease-in-out hover:bg-dark-orange hover:text-black"
