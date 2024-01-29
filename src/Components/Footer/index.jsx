@@ -20,16 +20,20 @@ const footer = () => {
               />
               Collection
             </a>
-            <p className="mt-2 text-sm text-gray-500">Never Stop Learning</p>
             <p className="mt-2 text-sm text-gray-500">
-              Developed by
+              An unofficial FreeCodeCamp site
+            </p>
+            <p className="mt-2 text-sm text-gray-500">Never Stop Learning</p>
+            <p className="mt-2 text-sm text-gray-500">Developed by</p>
+            <p className="mt-2">
               <a
-                className=" juanchosFont ml-1 text-lg font-semibold transition duration-500 ease-in-out hover:text-black hover:underline hover:underline-offset-2"
+                className="juanchosFont text-lg font-semibold transition duration-500 ease-in-out hover:text-black hover:underline hover:underline-offset-2"
                 href="https://www.linkedin.com/in/1diazdev/"
               >
                 Juan Diaz
               </a>
             </p>
+
             <div className="mt-8">
               <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
                 <a

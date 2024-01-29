@@ -63,13 +63,6 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <p className="w-fit rounded-lg border px-2 py-1">
-            This website is
-            <span className="px-1 font-semibold underline underline-offset-4">
-              not
-            </span>
-            part of the official FreeCodeCamp site.
-          </p>
           <h2 className="text-md pb-4 pt-2 text-left font-medium sm:text-xl">
             Description
           </h2>
