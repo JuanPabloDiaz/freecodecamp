@@ -83,6 +83,11 @@ To get started with [freecodecamp](https://freecodecamp.jpdiaz.dev), simply clon
 
 I welcome contributions to the freecodecamp collection repo! Feel free to fork the repository and submit pull requests with your improvements.
 
+### Contributors
+
+<a href="https://github.com/JuanPabloDiaz/freecodecamp/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/freecodecamp" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
+
+
 ## License 📜
 
 [freecodecamp](https://freecodecamp.jpdiaz.dev) is licensed under the MIT License.
