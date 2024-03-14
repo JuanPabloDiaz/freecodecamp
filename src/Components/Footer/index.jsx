@@ -37,7 +37,7 @@ const footer = () => {
               <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
-                  href="https://twitter.com/1diazdev"
+                  href="https://github.com/JuanPabloDiaz"
                 >
                   <TbBrandGithubFilled className="h-5 w-5" />
                 </a>
