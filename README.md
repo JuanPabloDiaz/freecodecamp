@@ -40,6 +40,10 @@ Get a glimpse into my technical capabilities and passion for front-end developme
 
 <img src="./src/assets/images/phone.png" width="250" />
 
+### Lighthouse Score 🚀
+
+<img src="./src/assets/images/lighthouse.png" width="" />
+
 ## Features:
 
 - Responsive design: [freecodecamp](https://freecodecamp.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
@@ -86,7 +90,6 @@ I welcome contributions to the freecodecamp collection repo! Feel free to fork t
 ### Contributors
 
 <a href="https://github.com/JuanPabloDiaz/freecodecamp/graphs/contributors"><img src="https://contrib.rocks/image?repo=JuanPabloDiaz/freecodecamp" /></a><!-- Made with [contrib.rocks](https://contrib.rocks). -->
-
 
 ## License 📜
 
