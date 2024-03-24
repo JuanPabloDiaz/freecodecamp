@@ -42,7 +42,7 @@ Get a glimpse into my technical capabilities and passion for front-end developme
 
 ### Lighthouse Score 🚀
 
-<img src="./src/assets/images/lighthouse.png" width="" />
+<img src="./src/assets/images/lighthouse.png" />
 
 ## Features:
 
@@ -85,7 +85,7 @@ To get started with [freecodecamp](https://freecodecamp.jpdiaz.dev), simply clon
 
 ## Contribution 🤝
 
-I welcome contributions to the freecodecamp collection repo! Feel free to fork the repository and submit pull requests with your improvements.
+All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ### Contributors
 
