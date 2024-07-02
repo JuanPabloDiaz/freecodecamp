@@ -4,7 +4,7 @@ function DrumPad({ id, triggerKey, onClick, src }) {
   return (
     <button
       id={id}
-      className="drum-pad bg-dark-orange hover:bg-dark-orange/60 rounded-xl border-2 border-black p-4 transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#94E4EA] focus:ring-opacity-50"
+      className="drum-pad rounded-xl border-2 border-black bg-dark-orange p-4 transition duration-200 hover:bg-dark-orange/60 focus:outline-none focus:ring-2 focus:ring-[#94E4EA] focus:ring-opacity-50"
       onClick={onClick}
     >
       {triggerKey}

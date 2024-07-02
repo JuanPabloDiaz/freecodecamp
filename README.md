@@ -83,6 +83,13 @@ To get started with [freecodecamp](https://freecodecamp.jpdiaz.dev), simply clon
    ```
 4. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
 
+## Usefull Commands 🧰
+
+- Run before Deploy: `$ npm run build`
+- Check for errors: `$ npm run lint`
+- Run Prettier: `$ npm run format`
+- Run Lighthouse in local: `$ npm run lighthouse`
+
 ## Contribution 🤝
 
 All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
