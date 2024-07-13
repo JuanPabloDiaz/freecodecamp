@@ -12,7 +12,10 @@ const footer = () => {
         <div className="container flex flex-col flex-wrap items-center justify-center px-5 pb-12 pt-10 md:flex-row md:items-center">
           {/* logo: */}
           <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
-            <a className="title-font flex items-center justify-center gap-2 text-lg font-medium text-gray-900 md:justify-start">
+            <a
+              href="/"
+              className="title-font flex items-center justify-center gap-2 text-lg font-medium text-gray-900 md:justify-start"
+            >
               <img
                 className="h-5 w-auto fill-current text-gray-900"
                 src={logo}
