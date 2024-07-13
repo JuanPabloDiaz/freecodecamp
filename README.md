@@ -24,7 +24,7 @@ In this repository, you'll find the following projects to explore:
 - **Twitch.tv JSON API** ( [View Demo](https://twitch.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/twitch): A Twitch.tv JSON API that displays the status of several Twitch.tv channels by using the Twitch.tv JSON API.
 - **Random Quote Generator** ( [View Demo](https://quote.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/random-quote-generator) ): A random quote generator that displays quotes from famous people by consuming an API.
 - **Wikipedia Viewer** ( [View Demo](https://wiki.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/wikipediaViewer) ): A Wikipedia viewer that allows users to search for articles on Wikipedia or view a random article. It consumes the Wikipedia API.
-- **Markdown Previewer** ( [View Demo](https://markdown.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/markdownPreviewer) ): A markdown previewer that converts plain text into HTML. Alowing users to write in markdown and see the output as they type.
+- **Markdown Previewer** ( [View Demo](https://markdown.jpdiaz.dev/) | [View Code](https://stackblitz.com/github.com/JuanPabloDiaz/markdownPreviewer) ): A markdown previewer that converts plain text into HTML. Allowing users to write in markdown and see the output as they type.
 
 Get a glimpse into my technical capabilities and passion for front-end development!
 
