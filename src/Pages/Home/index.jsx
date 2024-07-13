@@ -32,11 +32,12 @@ const Home = () => {
           </h2>
           <div className="flex items-center justify-stretch gap-8">
             <p>
-              This website is a collection of all the projects I&apos;ve built
-              to get these
+              This website is a collection of all the projects I{`'`}ve built to
+              get these
               <a
                 className="px-1 font-medium  transition duration-500 ease-in-out hover:text-blue-200 hover:underline"
-                href="/Certificate"
+                href="/certificate"
+                aria-label="view certifications page"
               >
                 certifications
               </a>

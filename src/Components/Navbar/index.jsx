@@ -48,6 +48,7 @@ const Navbar = () => {
               <div className={dropdownStyle}>
                 <NavLink
                   to="/TicTacToe"
+                  aria-label="Tic Tac Toe project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -55,6 +56,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   to="/Simon"
+                  aria-label="Simon project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -62,6 +64,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   to="/Drum"
+                  aria-label="Drum Machine project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -80,6 +83,7 @@ const Navbar = () => {
               <div className={dropdownStyle}>
                 <NavLink
                   to="/calculator"
+                  aria-label="Calculator project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -87,6 +91,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   to="/Pomodoro"
+                  aria-label="25 + 5 clock project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -105,6 +110,7 @@ const Navbar = () => {
               <div className={dropdownStyle}>
                 <NavLink
                   to="/Weather"
+                  aria-label="Local Weather project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -112,6 +118,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   to="/Twitch"
+                  aria-label="Twitch project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -119,6 +126,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   to="/Quote"
+                  aria-label="Quote Generator project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -126,6 +134,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   to="/Wikipedia"
+                  aria-label="Wikipedia Viewer project page"
                   className={`${hoverStyle} ${({ isActive }) =>
                     isActive ? activeStyle : undefined}`}
                 >
@@ -137,6 +146,7 @@ const Navbar = () => {
           <li className={hoverStyle}>
             <NavLink
               to="/Markdown"
+              aria-label="Markdown Preview project page"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               Editing
@@ -149,6 +159,7 @@ const Navbar = () => {
           >
             <NavLink
               to="/certificate"
+              aria-label="view certifications page"
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               <PiCertificateDuotone
