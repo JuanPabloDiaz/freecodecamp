@@ -42,7 +42,7 @@ Get a glimpse into my technical capabilities and passion for front-end developme
 
 ### Lighthouse Score 🚀
 
-<img src="./src/assets/images/lighthouse.png" />
+<img src="./src/assets/images/lighthouse.jpg" />
 
 ## Features:
 
@@ -83,7 +83,7 @@ To get started with [freecodecamp](https://freecodecamp.jpdiaz.dev), simply clon
    ```
 4. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
 
-## Usefull Commands 🧰
+## Useful Commands 🧰
 
 - Run before Deploy: `$ npm run build`
 - Check for errors: `$ npm run lint`
