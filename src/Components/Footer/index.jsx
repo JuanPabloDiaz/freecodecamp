@@ -40,12 +40,14 @@ const footer = () => {
               <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
+                  aria-label="GitHub Profile for Juan Diaz"
                   href="https://github.com/JuanPabloDiaz"
                 >
                   <TbBrandGithubFilled className="h-5 w-5" />
                 </a>
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
+                  aria-label="LinkedIn Profile for Juan Diaz"
                   href="https://www.linkedin.com/in/1diazdev/"
                 >
                   <svg
@@ -66,6 +68,7 @@ const footer = () => {
                 </a>
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
+                  aria-label="Twitter Profile for Juan Diaz"
                   href="https://twitter.com/1diazdev"
                 >
                   <svg
@@ -87,7 +90,7 @@ const footer = () => {
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
                 About
               </h2>
-              <nav className="mb-10 list-none">
+              <ul className="mb-10 list-none">
                 <li className="mt-3">
                   <a
                     className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -112,7 +115,7 @@ const footer = () => {
                     Linkedin
                   </a>
                 </li>
-              </nav>
+              </ul>
             </section>
             <section className="min-w-fit px-4">
               <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-gray-900">
@@ -120,7 +123,7 @@ const footer = () => {
               </h2>
               <nav className="mb-10 list-none">
                 <div className="flex flex-wrap gap-2 text-justify md:gap-10 lg:gap-16">
-                  <div className="w-auto">
+                  <ul className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -161,8 +164,8 @@ const footer = () => {
                         25 + 5 Clock
                       </a>
                     </li>
-                  </div>
-                  <div className="w-auto">
+                  </ul>
+                  <ul className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -203,7 +206,7 @@ const footer = () => {
                         Markdown Previewer
                       </a>
                     </li>
-                  </div>
+                  </ul>
                 </div>
               </nav>
             </section>
@@ -213,7 +216,7 @@ const footer = () => {
               </h2>
               <nav className="mb-10 list-none">
                 <div className="flex flex-wrap gap-2 text-justify md:gap-10 lg:gap-16">
-                  <div className="w-auto">
+                  <ul className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -254,8 +257,8 @@ const footer = () => {
                         25 + 5 Clock
                       </a>
                     </li>
-                  </div>
-                  <div className="w-auto">
+                  </ul>
+                  <ul className="w-auto">
                     <li className="mt-3">
                       <a
                         className="cursor-pointer text-gray-500 hover:text-gray-900"
@@ -296,7 +299,7 @@ const footer = () => {
                         Markdown Previewer
                       </a>
                     </li>
-                  </div>
+                  </ul>
                 </div>
               </nav>
             </section>
