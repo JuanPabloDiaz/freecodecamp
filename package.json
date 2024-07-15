@@ -15,7 +15,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "^2.1.4",
-    "@uiw/react-markdown-preview": "^5.1.1",
+    "@uiw/react-markdown-preview": "^5.1.2",
     "axios": "^1.7.2",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.395.0",
