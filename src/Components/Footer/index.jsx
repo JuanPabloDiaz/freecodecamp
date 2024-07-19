@@ -4,7 +4,10 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { BsDot } from "react-icons/bs";
 
 const footer = () => {
+  const startYear = 2023;
   const currentYear = new Date().getFullYear();
+  const yearText =
+    startYear === currentYear ? startYear : `${startYear} - ${currentYear}`;
 
   return (
     <>
@@ -307,7 +310,7 @@ const footer = () => {
         </div>
         <div className="bg-gray-300">
           <div className="flex items-center justify-center gap-1 py-4 text-sm capitalize text-gray-700">
-            <p className="">© {currentYear} All rights reserved</p>
+            <p className="">© {yearText}</p>
             <BsDot />
             <a
               className="transition duration-500 ease-in-out hover:font-semibold hover:text-black hover:underline hover:underline-offset-2"
