@@ -72,7 +72,7 @@ const footer = () => {
                 <a
                   className="ml-3 cursor-pointer text-gray-500 hover:text-gray-700"
                   aria-label="Twitter Profile for Juan Diaz"
-                  href="https://twitter.com/1diazdev"
+                  href="https://twitter.com/JuanDiaz_427"
                 >
                   <svg
                     fill="currentColor"
