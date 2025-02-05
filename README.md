@@ -2,9 +2,11 @@
 
 # FreeCodeCamp Collection Projects 📚
 
-Embark on my journey through **[freeCodeCamp’s legacy Front End Development Certification!](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)** These projects showcase my growth in HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Node.js, Git, and GitHub. From mastering responsive design with Bootstrap to building interactive functionalities with React, each project reflects my dedication for learning and experimentation.
+Embark on my journey through **[FreeCodeCamp’s LEGACY Front End Development Certification!](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)** These projects showcase my growth in HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Node.js, Git, and GitHub. From mastering responsive design with Bootstrap to building interactive functionalities with React, each project reflects my dedication for learning and experimentation.
 
 While working on the requirements to obtain the certifications, I created multiple projects, each with its own GitHub repository and website. However, I wasn't satisfied with the result. After some time, I realized that merging them into a single repository would be a great idea. This project was thus conceived, aiming to improve user experience and consolidate a more robust portfolio.
+
+> 📌Note: As mention above, these repo is mainly regarding the projects I build to earn the **[FreeCodeCamp’s LEGACY Front End Development Certification](https://www.freecodecamp.org/certification/1diazdev/legacy-front-end)**. To see **_all my FreeCodeCamp certifications & projects_**, please refer to the **[FreeCodeCamp Certification Projects](https://github.com/JuanPabloDiaz/freecodecamp_certifications)** repo </>.
 
 <div align="center">
 
@@ -52,7 +54,7 @@ Get a glimpse into my technical capabilities and passion for front-end developme
 
 ### Built With 🔑
 
-Welcome to the [freecodecamp](https://freecodecamp.jpdiaz.dev), collection.
+Welcome to the [freecodecamp collection](https://freecodecamp.jpdiaz.dev).
 
 ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
@@ -112,6 +114,8 @@ I hope you enjoy using the freecodecamp repo!
 [![](https://img.shields.io/badge/2021-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2021)
 [![](https://img.shields.io/badge/2022-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2022)
 [![](https://img.shields.io/badge/2023-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2023)
+
+[![FreeCodeCamp Certification Projects](https://img.shields.io/badge/freeCodeCamp_Certification_Projects-0A0A23.svg?style=for-the-badge&logo=freeCodeCamp&logoColor=white)](https://github.com/JuanPabloDiaz/freecodecamp_certifications)
 
 <!-- CONTACT -->
 
