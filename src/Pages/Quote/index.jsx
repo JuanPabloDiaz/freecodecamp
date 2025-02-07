@@ -7,7 +7,8 @@ const QuoteGenerator = () => {
   const [endpoints, setEndpoints] = useState([]); // State to store the data from the dummy API. It's an empty array because the data is an array of objects
 
   const fetchQuote = () => {
-    fetch("https://api.quotable.io/quotes/random")
+    // fetch("https://api.quotable.io/quotes/random") <--- deprecated since 2024 (https certificate issue)
+    fetch("https://api.breakingbadquotes.xyz/v1/quotes")
       .then((response) => response.json())
       .then((json) => {
         // console.log("Data from API: ", json);
@@ -23,13 +24,13 @@ const QuoteGenerator = () => {
     <Layout>
       <div className="relative mb-12 flex items-center justify-center">
         <h1 className="text-xl font-medium text-black sm:text-2xl md:text-3xl">
-          Quote Generator
+          Breaking Bad Quote Generator
         </h1>
       </div>
       <div className="flex w-screen flex-col items-center justify-center gap-4 p-2">
         <div className="m-6 flex min-h-[180px] w-full flex-col items-start justify-around gap-6 rounded-lg bg-[#333333] p-6 text-white/90 shadow-md shadow-[#666666] sm:w-[500px] md:w-[600px] lg:w-[700px]">
           <p className="text-xl font-semibold text-[#F8F9FA] sm:text-xl md:text-2xl">
-            {endpoints[0]?.content}
+            {endpoints[0]?.quote}
           </p>
           <p className="sm:text-md text-sm font-normal text-[#999999] md:text-lg">
             - {endpoints[0]?.author} -
